@@ -1,0 +1,6 @@
+framework module Pods_TZVideoSwift {
+  umbrella header "Pods-TZVideoSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

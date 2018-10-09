@@ -1,0 +1,6 @@
+framework module Pods_TZVideoSwiftTests {
+  umbrella header "Pods-TZVideoSwiftTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
