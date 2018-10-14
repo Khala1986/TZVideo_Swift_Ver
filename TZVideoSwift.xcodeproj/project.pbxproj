@@ -18,6 +18,15 @@
 		FD160CB9216C910C00FDFBF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD160CB7216C910C00FDFBF1 /* LaunchScreen.storyboard */; };
 		FD160CC4216C910C00FDFBF1 /* TZVideoSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD160CC3216C910C00FDFBF1 /* TZVideoSwiftTests.swift */; };
 		FD160CCF216C910C00FDFBF1 /* TZVideoSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD160CCE216C910C00FDFBF1 /* TZVideoSwiftUITests.swift */; };
+		FD782815217374CA00DD19B6 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD782814217374CA00DD19B6 /* MainTabBarController.swift */; };
+		FD78282A217381A300DD19B6 /* TZNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD782829217381A300DD19B6 /* TZNavigationController.swift */; };
+		FD78282C2173822800DD19B6 /* TZBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD78282B2173822800DD19B6 /* TZBaseViewController.swift */; };
+		FD78282E2173829C00DD19B6 /* TZWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD78282D2173829C00DD19B6 /* TZWebViewController.swift */; };
+		FD782830217383B400DD19B6 /* TZMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD78282F217383B400DD19B6 /* TZMediator.swift */; };
+		FD782832217386BE00DD19B6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD782831217386BE00DD19B6 /* HomeViewController.swift */; };
+		FD7828342173871700DD19B6 /* DiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7828332173871700DD19B6 /* DiscoveryViewController.swift */; };
+		FD7828362173875600DD19B6 /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7828352173875600DD19B6 /* FollowViewController.swift */; };
+		FD782838217387AB00DD19B6 /* UserCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD782837217387AB00DD19B6 /* UserCenterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +70,15 @@
 		FD160CCA216C910C00FDFBF1 /* TZVideoSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TZVideoSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD160CCE216C910C00FDFBF1 /* TZVideoSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZVideoSwiftUITests.swift; sourceTree = "<group>"; };
 		FD160CD0216C910C00FDFBF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD782814217374CA00DD19B6 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		FD782829217381A300DD19B6 /* TZNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZNavigationController.swift; sourceTree = "<group>"; };
+		FD78282B2173822800DD19B6 /* TZBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZBaseViewController.swift; sourceTree = "<group>"; };
+		FD78282D2173829C00DD19B6 /* TZWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZWebViewController.swift; sourceTree = "<group>"; };
+		FD78282F217383B400DD19B6 /* TZMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZMediator.swift; sourceTree = "<group>"; };
+		FD782831217386BE00DD19B6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FD7828332173871700DD19B6 /* DiscoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryViewController.swift; sourceTree = "<group>"; };
+		FD7828352173875600DD19B6 /* FollowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
+		FD782837217387AB00DD19B6 /* UserCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCenterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +157,7 @@
 		FD160CAA216C910B00FDFBF1 /* TZVideoSwift */ = {
 			isa = PBXGroup;
 			children = (
+				FD7828162173775400DD19B6 /* UI */,
 				FD160CE4216CB5AC00FDFBF1 /* Dependencies */,
 				FD160CAB216C910B00FDFBF1 /* AppDelegate.swift */,
 				FD160CAD216C910B00FDFBF1 /* ViewController.swift */,
@@ -147,6 +166,7 @@
 				FD160CB7216C910C00FDFBF1 /* LaunchScreen.storyboard */,
 				FD160CBA216C910C00FDFBF1 /* Info.plist */,
 				FD160CB2216C910B00FDFBF1 /* TZVideoSwift.xcdatamodeld */,
+				FD782814217374CA00DD19B6 /* MainTabBarController.swift */,
 			);
 			path = TZVideoSwift;
 			sourceTree = "<group>";
@@ -174,6 +194,149 @@
 			children = (
 			);
 			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		FD7828162173775400DD19B6 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FD7828172173779E00DD19B6 /* Public */,
+				FD78282321737A0200DD19B6 /* Home */,
+				FD78282421737A3B00DD19B6 /* Discovery */,
+				FD78282721737AC500DD19B6 /* Follow */,
+				FD78282821737B0800DD19B6 /* UserCenter */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		FD7828172173779E00DD19B6 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				FD782818217377E900DD19B6 /* TZTableView */,
+				FD7828192173780E00DD19B6 /* TZCollectionView */,
+				FD78281A2173782400DD19B6 /* TZViewControllers */,
+				FD78281B2173785300DD19B6 /* TZLoading */,
+				FD78281C217378CA00DD19B6 /* TZShare */,
+				FD78281D2173792C00DD19B6 /* TZToast */,
+				FD78281E2173795200DD19B6 /* TZDLNA */,
+				FD78281F2173796A00DD19B6 /* TZPlayer */,
+				FD7828202173798B00DD19B6 /* TZInputView */,
+				FD782821217379A400DD19B6 /* TZErrorView */,
+				FD782822217379BF00DD19B6 /* TZSegmentedControl */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		FD782818217377E900DD19B6 /* TZTableView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TZTableView;
+			sourceTree = "<group>";
+		};
+		FD7828192173780E00DD19B6 /* TZCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TZCollectionView;
+			sourceTree = "<group>";
+		};
+		FD78281A2173782400DD19B6 /* TZViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FD782829217381A300DD19B6 /* TZNavigationController.swift */,
+				FD78282B2173822800DD19B6 /* TZBaseViewController.swift */,
+				FD78282D2173829C00DD19B6 /* TZWebViewController.swift */,
+				FD78282F217383B400DD19B6 /* TZMediator.swift */,
+			);
+			path = TZViewControllers;
+			sourceTree = "<group>";
+		};
+		FD78281B2173785300DD19B6 /* TZLoading */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TZLoading;
+			sourceTree = "<group>";
+		};
+		FD78281C217378CA00DD19B6 /* TZShare */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TZShare;
+			sourceTree = "<group>";
+		};
+		FD78281D2173792C00DD19B6 /* TZToast */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TZToast;
+			sourceTree = "<group>";
+		};
+		FD78281E2173795200DD19B6 /* TZDLNA */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TZDLNA;
+			sourceTree = "<group>";
+		};
+		FD78281F2173796A00DD19B6 /* TZPlayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TZPlayer;
+			sourceTree = "<group>";
+		};
+		FD7828202173798B00DD19B6 /* TZInputView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TZInputView;
+			sourceTree = "<group>";
+		};
+		FD782821217379A400DD19B6 /* TZErrorView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TZErrorView;
+			sourceTree = "<group>";
+		};
+		FD782822217379BF00DD19B6 /* TZSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TZSegmentedControl;
+			sourceTree = "<group>";
+		};
+		FD78282321737A0200DD19B6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FD782831217386BE00DD19B6 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FD78282421737A3B00DD19B6 /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+				FD7828332173871700DD19B6 /* DiscoveryViewController.swift */,
+			);
+			path = Discovery;
+			sourceTree = "<group>";
+		};
+		FD78282721737AC500DD19B6 /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+				FD7828352173875600DD19B6 /* FollowViewController.swift */,
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		FD78282821737B0800DD19B6 /* UserCenter */ = {
+			isa = PBXGroup;
+			children = (
+				FD782837217387AB00DD19B6 /* UserCenterViewController.swift */,
+			);
+			path = UserCenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -412,9 +575,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD7828362173875600DD19B6 /* FollowViewController.swift in Sources */,
+				FD78282E2173829C00DD19B6 /* TZWebViewController.swift in Sources */,
 				FD160CAE216C910B00FDFBF1 /* ViewController.swift in Sources */,
 				FD160CAC216C910B00FDFBF1 /* AppDelegate.swift in Sources */,
+				FD78282A217381A300DD19B6 /* TZNavigationController.swift in Sources */,
+				FD78282C2173822800DD19B6 /* TZBaseViewController.swift in Sources */,
+				FD782832217386BE00DD19B6 /* HomeViewController.swift in Sources */,
+				FD782815217374CA00DD19B6 /* MainTabBarController.swift in Sources */,
+				FD782838217387AB00DD19B6 /* UserCenterViewController.swift in Sources */,
+				FD782830217383B400DD19B6 /* TZMediator.swift in Sources */,
 				FD160CB4216C910B00FDFBF1 /* TZVideoSwift.xcdatamodeld in Sources */,
+				FD7828342173871700DD19B6 /* DiscoveryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
