@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+import SakuraKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        TXSakuraManager.registerLocalSakura(withNames:["WhiteTheme"])
+        let name = TXSakuraManager.getSakuraCurrentName()
+        let type = TXSakuraManager.getSakuraCurrentType()
+        TXSakuraManager.shiftSakura(withName: name, type: type)
+
         return true
     }
 

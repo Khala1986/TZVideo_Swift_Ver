@@ -1,0 +1,34 @@
+{
+    "App":{
+        "StatusBarStyle":"UIStatusBarStyleDefault",
+        "NavigationBarBarTintColor":"#FFFFFF",
+        "NavigationBarTintColor":"#FCCA07",
+        "TabBarBarTintColor":"#FFFFFF",
+        "TabBarTintColor":"#FCCA07",
+        "TableViewCellTitleTextColor":"#000000",
+        "TableViewCellDescTextColor":"#888888",
+        "BackgroundColor":"#FFFFFF",
+        "ForegroundColor":"#FCCA07",
+    },
+    "Home":{
+        "BackgroundColor":"#FFFFFF",
+
+    },
+    "Discovery":{
+        "BackgroundColor":"#FFFFFF",
+        "PublisherNameLabelTextColor":"#666666",
+    },
+    "Follow":{
+        "BackgroundColor":"#FFFFFF",
+
+    },
+    "UserCenter":{
+        "BackgroundColor":"#FFFFFF",
+        "SettingCellBackgroundColor":"#FFFFFF",
+        "SettingCellTitleTextColor":"#000000",
+    },
+    "Player":{
+        "BackgroundColor":"#FFFFFF",
+
+    }
+}
