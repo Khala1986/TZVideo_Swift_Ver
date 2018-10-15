@@ -12,6 +12,10 @@
 		8B4B9F926FA5F7E868EA7F9B /* Pods_TZVideoSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 476DD408FE65C62C5A9BC14E /* Pods_TZVideoSwiftUITests.framework */; };
 		FD14BD3E217474D1001BA5DC /* default.json in Resources */ = {isa = PBXBuildFile; fileRef = FD14BD3C217474D1001BA5DC /* default.json */; };
 		FD14BD3F217474D1001BA5DC /* WhiteTheme.json in Resources */ = {isa = PBXBuildFile; fileRef = FD14BD3D217474D1001BA5DC /* WhiteTheme.json */; };
+		FD14BD412174C47A001BA5DC /* TZTableViewProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14BD402174C47A001BA5DC /* TZTableViewProxy.swift */; };
+		FD14BD432174C4AD001BA5DC /* TZTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14BD422174C4AD001BA5DC /* TZTableViewCell.swift */; };
+		FD14BD452174D5D3001BA5DC /* TZErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14BD442174D5D3001BA5DC /* TZErrorView.swift */; };
+		FD14BD472174D606001BA5DC /* TZErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD14BD462174D606001BA5DC /* TZErrorView.xib */; };
 		FD160CAC216C910B00FDFBF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD160CAB216C910B00FDFBF1 /* AppDelegate.swift */; };
 		FD160CAE216C910B00FDFBF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD160CAD216C910B00FDFBF1 /* ViewController.swift */; };
 		FD160CB1216C910B00FDFBF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD160CAF216C910B00FDFBF1 /* Main.storyboard */; };
@@ -60,6 +64,10 @@
 		E35014DBE510E26D1A83809B /* Pods-TZVideoSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TZVideoSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-TZVideoSwift/Pods-TZVideoSwift.release.xcconfig"; sourceTree = "<group>"; };
 		FD14BD3C217474D1001BA5DC /* default.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = default.json; sourceTree = "<group>"; };
 		FD14BD3D217474D1001BA5DC /* WhiteTheme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WhiteTheme.json; sourceTree = "<group>"; };
+		FD14BD402174C47A001BA5DC /* TZTableViewProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZTableViewProxy.swift; sourceTree = "<group>"; };
+		FD14BD422174C4AD001BA5DC /* TZTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZTableViewCell.swift; sourceTree = "<group>"; };
+		FD14BD442174D5D3001BA5DC /* TZErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZErrorView.swift; sourceTree = "<group>"; };
+		FD14BD462174D606001BA5DC /* TZErrorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TZErrorView.xib; sourceTree = "<group>"; };
 		FD160CA8216C910B00FDFBF1 /* TZVideoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TZVideoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD160CAB216C910B00FDFBF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD160CAD216C910B00FDFBF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -251,6 +259,8 @@
 		FD782818217377E900DD19B6 /* TZTableView */ = {
 			isa = PBXGroup;
 			children = (
+				FD14BD402174C47A001BA5DC /* TZTableViewProxy.swift */,
+				FD14BD422174C4AD001BA5DC /* TZTableViewCell.swift */,
 			);
 			path = TZTableView;
 			sourceTree = "<group>";
@@ -318,6 +328,8 @@
 		FD782821217379A400DD19B6 /* TZErrorView */ = {
 			isa = PBXGroup;
 			children = (
+				FD14BD442174D5D3001BA5DC /* TZErrorView.swift */,
+				FD14BD462174D606001BA5DC /* TZErrorView.xib */,
 			);
 			path = TZErrorView;
 			sourceTree = "<group>";
@@ -472,6 +484,7 @@
 				FD160CB9216C910C00FDFBF1 /* LaunchScreen.storyboard in Resources */,
 				FD14BD3E217474D1001BA5DC /* default.json in Resources */,
 				FD160CB6216C910C00FDFBF1 /* Assets.xcassets in Resources */,
+				FD14BD472174D606001BA5DC /* TZErrorView.xib in Resources */,
 				FD160CB1216C910B00FDFBF1 /* Main.storyboard in Resources */,
 				FD14BD3F217474D1001BA5DC /* WhiteTheme.json in Resources */,
 			);
@@ -600,6 +613,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD7828362173875600DD19B6 /* FollowViewController.swift in Sources */,
+				FD14BD452174D5D3001BA5DC /* TZErrorView.swift in Sources */,
 				FD78282E2173829C00DD19B6 /* TZWebViewController.swift in Sources */,
 				FD160CAE216C910B00FDFBF1 /* ViewController.swift in Sources */,
 				FD160CAC216C910B00FDFBF1 /* AppDelegate.swift in Sources */,
@@ -608,9 +622,11 @@
 				FD782832217386BE00DD19B6 /* HomeViewController.swift in Sources */,
 				FD782815217374CA00DD19B6 /* MainTabBarController.swift in Sources */,
 				FD782838217387AB00DD19B6 /* UserCenterViewController.swift in Sources */,
+				FD14BD412174C47A001BA5DC /* TZTableViewProxy.swift in Sources */,
 				FD782830217383B400DD19B6 /* TZMediator.swift in Sources */,
 				FD160CB4216C910B00FDFBF1 /* TZVideoSwift.xcdatamodeld in Sources */,
 				FD7828342173871700DD19B6 /* DiscoveryViewController.swift in Sources */,
+				FD14BD432174C4AD001BA5DC /* TZTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
