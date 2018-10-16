@@ -38,6 +38,7 @@ class TZTableViewProxy: NSObject, UITableViewDataSource, UITableViewDelegate {
         cellActionClosure = actionClosure
     }
     
+    //MARK: UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataArray.count
     }
@@ -51,6 +52,11 @@ class TZTableViewProxy: NSObject, UITableViewDataSource, UITableViewDelegate {
         cellConfigClosure(cell as! TZTableViewCell, dataArray?[indexPath.row] as AnyObject,indexPath)
         
         return cell;
+    }
+    
+    //MARK: UITableViewDelegate
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        cellActionClosure(tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! TZTableViewCell, dataArray?[indexPath.row] as AnyObject, indexPath)
     }
     
 }

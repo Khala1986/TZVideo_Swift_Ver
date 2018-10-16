@@ -24,6 +24,8 @@
 		FD160CB9216C910C00FDFBF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD160CB7216C910C00FDFBF1 /* LaunchScreen.storyboard */; };
 		FD160CC4216C910C00FDFBF1 /* TZVideoSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD160CC3216C910C00FDFBF1 /* TZVideoSwiftTests.swift */; };
 		FD160CCF216C910C00FDFBF1 /* TZVideoSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD160CCE216C910C00FDFBF1 /* TZVideoSwiftUITests.swift */; };
+		FD192681217581D1003239DB /* TZCollectionViewProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD192680217581D1003239DB /* TZCollectionViewProxy.swift */; };
+		FD19268321758310003239DB /* TZCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD19268221758310003239DB /* TZCollectionViewCell.swift */; };
 		FD782815217374CA00DD19B6 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD782814217374CA00DD19B6 /* MainTabBarController.swift */; };
 		FD78282A217381A300DD19B6 /* TZNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD782829217381A300DD19B6 /* TZNavigationController.swift */; };
 		FD78282C2173822800DD19B6 /* TZBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD78282B2173822800DD19B6 /* TZBaseViewController.swift */; };
@@ -82,6 +84,8 @@
 		FD160CCA216C910C00FDFBF1 /* TZVideoSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TZVideoSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD160CCE216C910C00FDFBF1 /* TZVideoSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZVideoSwiftUITests.swift; sourceTree = "<group>"; };
 		FD160CD0216C910C00FDFBF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD192680217581D1003239DB /* TZCollectionViewProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZCollectionViewProxy.swift; sourceTree = "<group>"; };
+		FD19268221758310003239DB /* TZCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZCollectionViewCell.swift; sourceTree = "<group>"; };
 		FD782814217374CA00DD19B6 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		FD782829217381A300DD19B6 /* TZNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZNavigationController.swift; sourceTree = "<group>"; };
 		FD78282B2173822800DD19B6 /* TZBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZBaseViewController.swift; sourceTree = "<group>"; };
@@ -268,6 +272,8 @@
 		FD7828192173780E00DD19B6 /* TZCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				FD192680217581D1003239DB /* TZCollectionViewProxy.swift */,
+				FD19268221758310003239DB /* TZCollectionViewCell.swift */,
 			);
 			path = TZCollectionView;
 			sourceTree = "<group>";
@@ -617,6 +623,7 @@
 				FD78282E2173829C00DD19B6 /* TZWebViewController.swift in Sources */,
 				FD160CAE216C910B00FDFBF1 /* ViewController.swift in Sources */,
 				FD160CAC216C910B00FDFBF1 /* AppDelegate.swift in Sources */,
+				FD19268321758310003239DB /* TZCollectionViewCell.swift in Sources */,
 				FD78282A217381A300DD19B6 /* TZNavigationController.swift in Sources */,
 				FD78282C2173822800DD19B6 /* TZBaseViewController.swift in Sources */,
 				FD782832217386BE00DD19B6 /* HomeViewController.swift in Sources */,
@@ -625,6 +632,7 @@
 				FD14BD412174C47A001BA5DC /* TZTableViewProxy.swift in Sources */,
 				FD782830217383B400DD19B6 /* TZMediator.swift in Sources */,
 				FD160CB4216C910B00FDFBF1 /* TZVideoSwift.xcdatamodeld in Sources */,
+				FD192681217581D1003239DB /* TZCollectionViewProxy.swift in Sources */,
 				FD7828342173871700DD19B6 /* DiscoveryViewController.swift in Sources */,
 				FD14BD432174C4AD001BA5DC /* TZTableViewCell.swift in Sources */,
 			);
