@@ -19,9 +19,13 @@ class TZTableViewProxy: NSObject, UITableViewDataSource, UITableViewDelegate {
         let tempTableView = UITableView (frame: CGRect.zero, style: .plain)
         tempTableView.delegate = self
         tempTableView.dataSource = self
+        tempTableView.separatorStyle = .none
         return tempTableView
     }()
-
+    lazy var errorView: TZErrorView = {
+        let tempErrorView = TZErrorView(type:.TZErrorViewType_Unknown)
+        return tempErrorView
+    }()
     
     override init() {
         super.init()

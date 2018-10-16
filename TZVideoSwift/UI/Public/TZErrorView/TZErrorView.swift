@@ -6,9 +6,10 @@
 //
 
 import UIKit
+import AFNetworking
 
 enum TZErrorViewType: UInt {
-    case TZErrorViewType_Unknown
+    case TZErrorViewType_Unknown = 0
     case TZErrorViewType_NoNetwork
     case TZErrorViewType_NoData
     case TZErrorViewType_ParseError
@@ -25,6 +26,15 @@ class TZErrorView: UIView {
         self.init()
         let error = (Bundle.main.loadNibNamed("TZErrorView", owner: nil, options: nil))?.last as! TZErrorView
         error.errorType = type
+    }
+    
+    func setTitleandimageUrl(title:String , imageUrl:String){
+        self.titleLabel.text = title
+        self.imageView.setImageWith(URL(string:imageUrl)!)
+    }
+    
+    @IBAction func buttonAction(_ sender: Any) {
+    
     }
     /*
     // Only override draw() if you perform custom drawing.
