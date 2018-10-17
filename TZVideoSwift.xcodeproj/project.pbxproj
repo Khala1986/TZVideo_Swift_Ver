@@ -26,6 +26,7 @@
 		FD160CCF216C910C00FDFBF1 /* TZVideoSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD160CCE216C910C00FDFBF1 /* TZVideoSwiftUITests.swift */; };
 		FD192681217581D1003239DB /* TZCollectionViewProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD192680217581D1003239DB /* TZCollectionViewProxy.swift */; };
 		FD19268321758310003239DB /* TZCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD19268221758310003239DB /* TZCollectionViewCell.swift */; };
+		FD1C80D22176CAB6005C132B /* TZShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1C80D12176CAB6005C132B /* TZShare.swift */; };
 		FD4C2CEA21761A57005E8F68 /* TZLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C2CE921761A57005E8F68 /* TZLoading.swift */; };
 		FD4C2CED21761E26005E8F68 /* UIColor+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C2CEC21761E26005E8F68 /* UIColor+Custom.swift */; };
 		FD782815217374CA00DD19B6 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD782814217374CA00DD19B6 /* MainTabBarController.swift */; };
@@ -88,6 +89,7 @@
 		FD160CD0216C910C00FDFBF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD192680217581D1003239DB /* TZCollectionViewProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZCollectionViewProxy.swift; sourceTree = "<group>"; };
 		FD19268221758310003239DB /* TZCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZCollectionViewCell.swift; sourceTree = "<group>"; };
+		FD1C80D12176CAB6005C132B /* TZShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZShare.swift; sourceTree = "<group>"; };
 		FD4C2CE921761A57005E8F68 /* TZLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZLoading.swift; sourceTree = "<group>"; };
 		FD4C2CEC21761E26005E8F68 /* UIColor+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Custom.swift"; sourceTree = "<group>"; };
 		FD782814217374CA00DD19B6 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
@@ -313,6 +315,7 @@
 		FD78281C217378CA00DD19B6 /* TZShare */ = {
 			isa = PBXGroup;
 			children = (
+				FD1C80D12176CAB6005C132B /* TZShare.swift */,
 			);
 			path = TZShare;
 			sourceTree = "<group>";
@@ -637,6 +640,7 @@
 				FD4C2CEA21761A57005E8F68 /* TZLoading.swift in Sources */,
 				FD78282E2173829C00DD19B6 /* TZWebViewController.swift in Sources */,
 				FD160CAE216C910B00FDFBF1 /* ViewController.swift in Sources */,
+				FD1C80D22176CAB6005C132B /* TZShare.swift in Sources */,
 				FD160CAC216C910B00FDFBF1 /* AppDelegate.swift in Sources */,
 				FD19268321758310003239DB /* TZCollectionViewCell.swift in Sources */,
 				FD78282A217381A300DD19B6 /* TZNavigationController.swift in Sources */,
