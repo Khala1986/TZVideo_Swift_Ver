@@ -10,6 +10,7 @@
 		05B102000311460A8E0491EF /* Pods_TZVideoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13F4187C2731D0A737E21018 /* Pods_TZVideoSwift.framework */; };
 		87A467B7178ACD55B6C3B8C4 /* Pods_TZVideoSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0973DA9F7BE8461BE26EBAC /* Pods_TZVideoSwiftTests.framework */; };
 		8B4B9F926FA5F7E868EA7F9B /* Pods_TZVideoSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 476DD408FE65C62C5A9BC14E /* Pods_TZVideoSwiftUITests.framework */; };
+		FD1088982178193B00CE52FC /* TZInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1088972178193B00CE52FC /* TZInputView.swift */; };
 		FD14BD3E217474D1001BA5DC /* default.json in Resources */ = {isa = PBXBuildFile; fileRef = FD14BD3C217474D1001BA5DC /* default.json */; };
 		FD14BD3F217474D1001BA5DC /* WhiteTheme.json in Resources */ = {isa = PBXBuildFile; fileRef = FD14BD3D217474D1001BA5DC /* WhiteTheme.json */; };
 		FD14BD412174C47A001BA5DC /* TZTableViewProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14BD402174C47A001BA5DC /* TZTableViewProxy.swift */; };
@@ -68,6 +69,7 @@
 		8B54E426AF948CF4070C5B27 /* Pods-TZVideoSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TZVideoSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TZVideoSwiftTests/Pods-TZVideoSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E0973DA9F7BE8461BE26EBAC /* Pods_TZVideoSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TZVideoSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E35014DBE510E26D1A83809B /* Pods-TZVideoSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TZVideoSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-TZVideoSwift/Pods-TZVideoSwift.release.xcconfig"; sourceTree = "<group>"; };
+		FD1088972178193B00CE52FC /* TZInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZInputView.swift; sourceTree = "<group>"; };
 		FD14BD3C217474D1001BA5DC /* default.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = default.json; sourceTree = "<group>"; };
 		FD14BD3D217474D1001BA5DC /* WhiteTheme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WhiteTheme.json; sourceTree = "<group>"; };
 		FD14BD402174C47A001BA5DC /* TZTableViewProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZTableViewProxy.swift; sourceTree = "<group>"; };
@@ -347,6 +349,7 @@
 		FD7828202173798B00DD19B6 /* TZInputView */ = {
 			isa = PBXGroup;
 			children = (
+				FD1088972178193B00CE52FC /* TZInputView.swift */,
 			);
 			path = TZInputView;
 			sourceTree = "<group>";
@@ -653,6 +656,7 @@
 				FD782815217374CA00DD19B6 /* MainTabBarController.swift in Sources */,
 				FD782838217387AB00DD19B6 /* UserCenterViewController.swift in Sources */,
 				FD14BD412174C47A001BA5DC /* TZTableViewProxy.swift in Sources */,
+				FD1088982178193B00CE52FC /* TZInputView.swift in Sources */,
 				FD782830217383B400DD19B6 /* TZMediator.swift in Sources */,
 				FD4C2CED21761E26005E8F68 /* UIColor+Custom.swift in Sources */,
 				FD160CB4216C910B00FDFBF1 /* TZVideoSwift.xcdatamodeld in Sources */,
