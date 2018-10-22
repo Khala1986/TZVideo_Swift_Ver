@@ -31,6 +31,9 @@
 		FD1C80D22176CAB6005C132B /* TZShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1C80D12176CAB6005C132B /* TZShare.swift */; };
 		FD4C2CEA21761A57005E8F68 /* TZLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C2CE921761A57005E8F68 /* TZLoading.swift */; };
 		FD4C2CED21761E26005E8F68 /* UIColor+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C2CEC21761E26005E8F68 /* UIColor+Custom.swift */; };
+		FD4FF687217C1B2E001A20EF /* TZResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4FF686217C1B2E001A20EF /* TZResponse.swift */; };
+		FD4FF68B217C1E6E001A20EF /* HomeTemplateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4FF68A217C1E6E001A20EF /* HomeTemplateResponse.swift */; };
+		FD4FF68D217C21CB001A20EF /* HomeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4FF68C217C21CB001A20EF /* HomeDataSource.swift */; };
 		FD5A3F9F21777975006EC2C4 /* TZToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5A3F9E21777975006EC2C4 /* TZToast.swift */; };
 		FD782815217374CA00DD19B6 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD782814217374CA00DD19B6 /* MainTabBarController.swift */; };
 		FD78282A217381A300DD19B6 /* TZNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD782829217381A300DD19B6 /* TZNavigationController.swift */; };
@@ -41,6 +44,12 @@
 		FD7828342173871700DD19B6 /* DiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7828332173871700DD19B6 /* DiscoveryViewController.swift */; };
 		FD7828362173875600DD19B6 /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7828352173875600DD19B6 /* FollowViewController.swift */; };
 		FD782838217387AB00DD19B6 /* UserCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD782837217387AB00DD19B6 /* UserCenterViewController.swift */; };
+		FDB883C4217C191400058D38 /* Home_TableView_Response_12.json in Resources */ = {isa = PBXBuildFile; fileRef = FDB883BE217C191400058D38 /* Home_TableView_Response_12.json */; };
+		FDB883C5217C191400058D38 /* Home_TableView_Response_11.json in Resources */ = {isa = PBXBuildFile; fileRef = FDB883BF217C191400058D38 /* Home_TableView_Response_11.json */; };
+		FDB883C6217C191400058D38 /* Home_TableView_Response_14.json in Resources */ = {isa = PBXBuildFile; fileRef = FDB883C0217C191400058D38 /* Home_TableView_Response_14.json */; };
+		FDB883C7217C191400058D38 /* Home_TableView_Response_13.json in Resources */ = {isa = PBXBuildFile; fileRef = FDB883C1217C191400058D38 /* Home_TableView_Response_13.json */; };
+		FDB883C8217C191400058D38 /* Home_Channel_List.json in Resources */ = {isa = PBXBuildFile; fileRef = FDB883C2217C191400058D38 /* Home_Channel_List.json */; };
+		FDB883C9217C191400058D38 /* Home_TableView_Response_15.json in Resources */ = {isa = PBXBuildFile; fileRef = FDB883C3217C191400058D38 /* Home_TableView_Response_15.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +106,9 @@
 		FD1C80D12176CAB6005C132B /* TZShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZShare.swift; sourceTree = "<group>"; };
 		FD4C2CE921761A57005E8F68 /* TZLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZLoading.swift; sourceTree = "<group>"; };
 		FD4C2CEC21761E26005E8F68 /* UIColor+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Custom.swift"; sourceTree = "<group>"; };
+		FD4FF686217C1B2E001A20EF /* TZResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZResponse.swift; sourceTree = "<group>"; };
+		FD4FF68A217C1E6E001A20EF /* HomeTemplateResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTemplateResponse.swift; sourceTree = "<group>"; };
+		FD4FF68C217C21CB001A20EF /* HomeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataSource.swift; sourceTree = "<group>"; };
 		FD5A3F9E21777975006EC2C4 /* TZToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZToast.swift; sourceTree = "<group>"; };
 		FD782814217374CA00DD19B6 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		FD782829217381A300DD19B6 /* TZNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZNavigationController.swift; sourceTree = "<group>"; };
@@ -107,6 +119,12 @@
 		FD7828332173871700DD19B6 /* DiscoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryViewController.swift; sourceTree = "<group>"; };
 		FD7828352173875600DD19B6 /* FollowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
 		FD782837217387AB00DD19B6 /* UserCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCenterViewController.swift; sourceTree = "<group>"; };
+		FDB883BE217C191400058D38 /* Home_TableView_Response_12.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Home_TableView_Response_12.json; sourceTree = "<group>"; };
+		FDB883BF217C191400058D38 /* Home_TableView_Response_11.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Home_TableView_Response_11.json; sourceTree = "<group>"; };
+		FDB883C0217C191400058D38 /* Home_TableView_Response_14.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Home_TableView_Response_14.json; sourceTree = "<group>"; };
+		FDB883C1217C191400058D38 /* Home_TableView_Response_13.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Home_TableView_Response_13.json; sourceTree = "<group>"; };
+		FDB883C2217C191400058D38 /* Home_Channel_List.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Home_Channel_List.json; sourceTree = "<group>"; };
+		FDB883C3217C191400058D38 /* Home_TableView_Response_15.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Home_TableView_Response_15.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +181,8 @@
 		FD14BD3A21747407001BA5DC /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				FDB883CA217C1A4300058D38 /* Public */,
+				FDB883BD217C18ED00058D38 /* Home */,
 				FD14BD3B21747498001BA5DC /* Theme */,
 			);
 			path = Data;
@@ -405,6 +425,29 @@
 			path = UserCenter;
 			sourceTree = "<group>";
 		};
+		FDB883BD217C18ED00058D38 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FDB883C2217C191400058D38 /* Home_Channel_List.json */,
+				FDB883BF217C191400058D38 /* Home_TableView_Response_11.json */,
+				FDB883BE217C191400058D38 /* Home_TableView_Response_12.json */,
+				FDB883C1217C191400058D38 /* Home_TableView_Response_13.json */,
+				FDB883C0217C191400058D38 /* Home_TableView_Response_14.json */,
+				FDB883C3217C191400058D38 /* Home_TableView_Response_15.json */,
+				FD4FF68A217C1E6E001A20EF /* HomeTemplateResponse.swift */,
+				FD4FF68C217C21CB001A20EF /* HomeDataSource.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FDB883CA217C1A4300058D38 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				FD4FF686217C1B2E001A20EF /* TZResponse.swift */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -514,10 +557,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD160CB9216C910C00FDFBF1 /* LaunchScreen.storyboard in Resources */,
+				FDB883C5217C191400058D38 /* Home_TableView_Response_11.json in Resources */,
 				FD14BD3E217474D1001BA5DC /* default.json in Resources */,
+				FDB883C7217C191400058D38 /* Home_TableView_Response_13.json in Resources */,
+				FDB883C8217C191400058D38 /* Home_Channel_List.json in Resources */,
+				FDB883C9217C191400058D38 /* Home_TableView_Response_15.json in Resources */,
 				FD160CB6216C910C00FDFBF1 /* Assets.xcassets in Resources */,
 				FD14BD472174D606001BA5DC /* TZErrorView.xib in Resources */,
 				FD160CB1216C910B00FDFBF1 /* Main.storyboard in Resources */,
+				FDB883C4217C191400058D38 /* Home_TableView_Response_12.json in Resources */,
+				FDB883C6217C191400058D38 /* Home_TableView_Response_14.json in Resources */,
 				FD14BD3F217474D1001BA5DC /* WhiteTheme.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -655,11 +704,14 @@
 				FD160CAC216C910B00FDFBF1 /* AppDelegate.swift in Sources */,
 				FD19268321758310003239DB /* TZCollectionViewCell.swift in Sources */,
 				FD78282A217381A300DD19B6 /* TZNavigationController.swift in Sources */,
+				FD4FF68D217C21CB001A20EF /* HomeDataSource.swift in Sources */,
 				FD78282C2173822800DD19B6 /* TZBaseViewController.swift in Sources */,
 				FD782832217386BE00DD19B6 /* HomeViewController.swift in Sources */,
 				FD782815217374CA00DD19B6 /* MainTabBarController.swift in Sources */,
 				FD782838217387AB00DD19B6 /* UserCenterViewController.swift in Sources */,
 				FD14BD412174C47A001BA5DC /* TZTableViewProxy.swift in Sources */,
+				FD4FF68B217C1E6E001A20EF /* HomeTemplateResponse.swift in Sources */,
+				FD4FF687217C1B2E001A20EF /* TZResponse.swift in Sources */,
 				FD1088982178193B00CE52FC /* TZInputView.swift in Sources */,
 				FD782830217383B400DD19B6 /* TZMediator.swift in Sources */,
 				FD4C2CED21761E26005E8F68 /* UIColor+Custom.swift in Sources */,

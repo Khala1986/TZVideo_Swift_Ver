@@ -22,6 +22,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let type = TXSakuraManager.getSakuraCurrentType()
         TXSakuraManager.shiftSakura(withName: name, type: type)
 
+        let homeData = HomeDataSource()
+        homeData.getChannelList { (homelist:Any) in
+//            let list = homelist as! HomeChannelListResponse
+//            print(list.data)
+        }
+        
+        homeData.getChannel(getChannel: 11) { (channel) in
+            
+        }
+        
         return true
     }
 

@@ -1,0 +1,21 @@
+{
+    "code":200,
+    "msg":"",
+    "data":[
+            {
+            "channelName":"推荐",
+            "channelId":11
+            },{
+            "channelName":"IT互联网",
+            "channelId":12
+            },{
+            "channelName":"职业教育",
+            "channelId":13
+            },{
+            "channelName":"兴趣生活",
+            "channelId":14
+            },{
+            "channelName":"精彩视频",
+            "channelId":15
+            }]
+}
