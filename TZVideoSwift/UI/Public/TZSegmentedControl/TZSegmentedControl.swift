@@ -52,6 +52,7 @@ class TZSegmentedControl: UIToolbar, UICollectionViewDelegate, UICollectionViewD
     var highlightColor:UIColor!
     var itemTitles:Array<Any>!
     var itemWidth:CGFloat!
+    var scDelegate:TZSegmentedControlDelegate?
     lazy var lineView: UIView = {
         let tempLineView = UIView()
         tempLineView.backgroundColor = UIColor.init(hex: 0xFCCA07)
@@ -73,13 +74,15 @@ class TZSegmentedControl: UIToolbar, UICollectionViewDelegate, UICollectionViewD
 
         return tempcollectionView
     }()
-    weak var SCDelegate:TZSegmentedControlDelegate?
+   
 
     
     convenience init(frame:CGRect, itemwidth:CGFloat, itemTitle:Array<Any>){
         self.init(frame: frame)
         itemTitles = itemTitle
         itemWidth = itemwidth
+        self.layoutIfNeeded()
+        self.setupSubviews()
     }
     
     override init(frame: CGRect) {
@@ -91,13 +94,28 @@ class TZSegmentedControl: UIToolbar, UICollectionViewDelegate, UICollectionViewD
         fatalError("init(coder:) has not been implemented")
     }
     
+    func setupSubviews() {
+         self.addSubview(collectionView)
+        self.collectionView.mas_makeConstraints { (maker:MASConstraintMaker?) in
+            maker?.edges.equalTo()(self)
+        }
+        collectionView.addSubview(lineView)
+        lineView.mas_makeConstraints { (maker:MASConstraintMaker?) in
+            maker?.leading.equalTo()(15)
+            maker?.bottom.equalTo()(self);
+            maker?.width.equalTo()(itemWidth-30)
+            maker?.height.equalTo()(4)
+        }
+        collectionView.register(TZSegmentedControlCell.self, forCellWithReuseIdentifier: "TZSegmentedControlCell")
+    }
+    
     func setItem(itemTitleArr:Array<String>) {
         itemTitles = itemTitleArr
         collectionView.reloadData()
     }
     
     func didMoveTo(index:CGFloat) {
-         self.updateLineViewIndicator(index: index)
+        self.updateLineViewIndicator(index: index)
         self.moveToPage(index: Int(index))
     }
     
@@ -111,11 +129,17 @@ class TZSegmentedControl: UIToolbar, UICollectionViewDelegate, UICollectionViewD
         if (index < 0 || Int(index) > itemTitles.count-1) {
             return
         }
-        var oFrame = lineView.frame
-        oFrame.origin.x = index * itemWidth + 10
-        lineView.frame = oFrame
+        lineView .mas_updateConstraints { (maker:MASConstraintMaker?) in
+            maker?.leading.equalTo()(index * itemWidth + 15)
+        }
         
+        self.setNeedsUpdateConstraints()
+        // 调用此方法告诉self.view检测是否需要更新约束，若需要则更新，下面添加动画效果才起作用
+        self.updateConstraintsIfNeeded()
         
+        UIView.animate(withDuration: 0.3) {
+            self.layoutIfNeeded()
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -125,15 +149,18 @@ class TZSegmentedControl: UIToolbar, UICollectionViewDelegate, UICollectionViewD
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TZSegmentedControlCell", for: indexPath) as! TZSegmentedControlCell
         let itemTitle = itemTitles[indexPath.item] as! String
+        cell.normalColor = self.normalColor
+        cell.highlightColor = self.highlightColor
         cell.configCell(title: itemTitle, isSelected: currentIndex == indexPath.item)
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.updateLineViewIndicator(index:CGFloat(indexPath.item))
-        if (responds(to: #selector(SCDelegate?.didSelectItemAtIndex(segmentedControl:selectedIndex:fromIndex:)))) {
-            SCDelegate?.didSelectItemAtIndex!(segmentedControl:self , selectedIndex:indexPath.item, fromIndex: self.currentIndex)
-        }
+        self.didMoveTo(index: CGFloat(indexPath.item))
+        self.collectionView.scrollToItem(at: indexPath, at: UICollectionView.ScrollPosition.centeredHorizontally, animated: true)
+//        if (responds(to: #selector(scDelegate?.didSelectItemAtIndex(segmentedControl:selectedIndex:fromIndex:)))) {
+//            scDelegate?.didSelectItemAtIndex!(segmentedControl:self , selectedIndex:indexPath.item, fromIndex: self.currentIndex)
+//        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

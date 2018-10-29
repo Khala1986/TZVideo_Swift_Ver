@@ -15,7 +15,7 @@ class HomeCollectionViewProxy: TZCollectionViewProxy, TZSegmentedControlDelegate
         segmentedControl.sakura.tintColor()("App.NavigationBarTintColor");
         segmentedControl.normalColor = UIColor.white
         segmentedControl.highlightColor = UIColor(hex: 0xFCCA07)
-        segmentedControl.delegate = (self as! UIToolbarDelegate)
+        segmentedControl.scDelegate = self
         return segmentedControl
     }()
     
@@ -25,12 +25,9 @@ class HomeCollectionViewProxy: TZCollectionViewProxy, TZSegmentedControlDelegate
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let width = scrollView.frame.width
-        if width > 0 {
-            let index = scrollView.contentOffset.x / width
-            segmentedControl.didMoveTo(index: index)
-        }
+        print("scrollView.contentOffset.x \(scrollView.contentOffset.x)")
     }
+
     
     func didSelectItemAtIndex(segmentedControl: TZSegmentedControl, selectedIndex: Int, fromIndex: Int) {
         self.collectionView.scrollToItem(at: IndexPath(item: selectedIndex, section: 0), at: .centeredHorizontally, animated: true)

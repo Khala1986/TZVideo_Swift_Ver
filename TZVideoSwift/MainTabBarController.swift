@@ -25,6 +25,7 @@ class MainTabBarController: UITabBarController {
             navi.tabBarItem.image = UIImage (imageLiteralResourceName: imagesArr[index])
             navi.navigationBar.sakura.barTintColor()("App.NavigationBarBarTintColor")
             navi.navigationBar.sakura.tintColor()("App.NavigationBarTintColor")
+            navi.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor(hex: 0xFCCA07)]
         }
             
         
