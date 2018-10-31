@@ -17,7 +17,7 @@ struct DiscoveryListItem: Codable {
     var cover:String!
     var videoId:String!
     var duration:String!
-    var name:DiscoveryPublisher!
+    var publisher:DiscoveryPublisher!
 }
 
 struct DiscoveryListResponse: Codable {
