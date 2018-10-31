@@ -69,6 +69,8 @@
 		FDB883C7217C191400058D38 /* Home_TableView_Response_13.json in Resources */ = {isa = PBXBuildFile; fileRef = FDB883C1217C191400058D38 /* Home_TableView_Response_13.json */; };
 		FDB883C8217C191400058D38 /* Home_Channel_List.json in Resources */ = {isa = PBXBuildFile; fileRef = FDB883C2217C191400058D38 /* Home_Channel_List.json */; };
 		FDB883C9217C191400058D38 /* Home_TableView_Response_15.json in Resources */ = {isa = PBXBuildFile; fileRef = FDB883C3217C191400058D38 /* Home_TableView_Response_15.json */; };
+		FDE3C57D2189D4510021D5F6 /* Discovery_List.json in Resources */ = {isa = PBXBuildFile; fileRef = FDE3C57C2189D4510021D5F6 /* Discovery_List.json */; };
+		FDE3C57F2189D6600021D5F6 /* DiscoveryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE3C57E2189D6600021D5F6 /* DiscoveryDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,6 +165,8 @@
 		FDB883C1217C191400058D38 /* Home_TableView_Response_13.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Home_TableView_Response_13.json; sourceTree = "<group>"; };
 		FDB883C2217C191400058D38 /* Home_Channel_List.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Home_Channel_List.json; sourceTree = "<group>"; };
 		FDB883C3217C191400058D38 /* Home_TableView_Response_15.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Home_TableView_Response_15.json; sourceTree = "<group>"; };
+		FDE3C57C2189D4510021D5F6 /* Discovery_List.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Discovery_List.json; sourceTree = "<group>"; };
+		FDE3C57E2189D6600021D5F6 /* DiscoveryDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,6 +271,7 @@
 		FD14BD3A21747407001BA5DC /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				FDE3C57B2189D42B0021D5F6 /* Discovery */,
 				FDB883CA217C1A4300058D38 /* Public */,
 				FDB883BD217C18ED00058D38 /* Home */,
 				FD14BD3B21747498001BA5DC /* Theme */,
@@ -537,6 +542,15 @@
 			path = Public;
 			sourceTree = "<group>";
 		};
+		FDE3C57B2189D42B0021D5F6 /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+				FDE3C57C2189D4510021D5F6 /* Discovery_List.json */,
+				FDE3C57E2189D6600021D5F6 /* DiscoveryDataSource.swift */,
+			);
+			path = Discovery;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -654,6 +668,7 @@
 				FDB883C9217C191400058D38 /* Home_TableView_Response_15.json in Resources */,
 				FD160CB6216C910C00FDFBF1 /* Assets.xcassets in Resources */,
 				FD14BD472174D606001BA5DC /* TZErrorView.xib in Resources */,
+				FDE3C57D2189D4510021D5F6 /* Discovery_List.json in Resources */,
 				FD14994F217DC7420058C68E /* HomeChangeTableViewCell.xib in Resources */,
 				FD149941217DC6810058C68E /* HomeTitleTableViewCell.xib in Resources */,
 				FD149945217DC6AF0058C68E /* HomeOneBigTableViewCell.xib in Resources */,
@@ -809,6 +824,7 @@
 				FD78282A217381A300DD19B6 /* TZNavigationController.swift in Sources */,
 				FD149931217DBEF80058C68E /* HomeBaseTemplateView.swift in Sources */,
 				FD4FF68D217C21CB001A20EF /* HomeDataSource.swift in Sources */,
+				FDE3C57F2189D6600021D5F6 /* DiscoveryDataSource.swift in Sources */,
 				FD78282C2173822800DD19B6 /* TZBaseViewController.swift in Sources */,
 				FD782832217386BE00DD19B6 /* HomeViewController.swift in Sources */,
 				FD782815217374CA00DD19B6 /* MainTabBarController.swift in Sources */,
