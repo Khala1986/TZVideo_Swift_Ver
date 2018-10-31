@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeChangeTableViewCell" rowHeight="48" id="wrv-c2-eDC" customClass="HomeChangeTableViewCell">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeChangeTableViewCell" rowHeight="48" id="wrv-c2-eDC" customClass="HomeChangeTableViewCell" customModule="TZVideoSwift" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="381" height="48"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wrv-c2-eDC" id="kkA-cI-2K3">
@@ -52,8 +52,8 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="iconView" destination="DMR-mv-u4U" id="i4N-fq-7hD"/>
-                <outlet property="titleLabel" destination="KF6-h9-QN5" id="hx5-wC-FZZ"/>
+                <outlet property="iconView" destination="DMR-mv-u4U" id="6WT-oi-dPe"/>
+                <outlet property="titleLabel" destination="KF6-h9-QN5" id="fKH-uX-d4J"/>
             </connections>
             <point key="canvasLocation" x="-205.5" y="70"/>
         </tableViewCell>

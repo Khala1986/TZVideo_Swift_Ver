@@ -24,8 +24,9 @@ class TZErrorView: UIView {
     
     convenience init(type:TZErrorViewType){
         self.init()
-        let error = (Bundle.main.loadNibNamed("TZErrorView", owner: nil, options: nil))?.last as! TZErrorView
-        error.errorType = type
+//        let error = (Bundle.main.loadNibNamed("TZErrorView", owner: nil, options: nil))?.last as! TZErrorView
+//        error.errorType = type
+        self.errorType = type
     }
     
     func setTitleandimageUrl(title:String , imageUrl:String){

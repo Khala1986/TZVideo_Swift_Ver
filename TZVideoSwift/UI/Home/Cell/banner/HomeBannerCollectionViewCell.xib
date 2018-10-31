@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeBannerCollectionViewCell" id="c2U-VN-Yh5" userLabel="HomeBannerCollectionViewCell" customClass="HomeBannerCollectionViewCell">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeBannerCollectionViewCell" id="c2U-VN-Yh5" userLabel="HomeBannerCollectionViewCell" customClass="HomeBannerCollectionViewCell" customModule="TZVideoSwift" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="252" height="126"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -58,9 +58,9 @@
             <viewLayoutGuide key="safeArea" id="hzL-yw-GJl"/>
             <size key="customSize" width="252" height="126"/>
             <connections>
-                <outlet property="imageView" destination="ap4-fx-Eg2" id="MTN-fF-I9K"/>
-                <outlet property="subTitleLabel" destination="IP2-4U-OKW" id="4oZ-wH-zHX"/>
-                <outlet property="titleLabel" destination="Je7-RG-z2h" id="3s5-Vh-Kdu"/>
+                <outlet property="imageView" destination="ap4-fx-Eg2" id="CmT-3g-zuL"/>
+                <outlet property="subTitleLabel" destination="IP2-4U-OKW" id="wMW-R5-66Y"/>
+                <outlet property="titleLabel" destination="Je7-RG-z2h" id="GAN-Ie-Zqb"/>
             </connections>
             <point key="canvasLocation" x="-283" y="110"/>
         </collectionViewCell>

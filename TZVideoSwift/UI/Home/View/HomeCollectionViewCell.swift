@@ -9,8 +9,9 @@ import UIKit
 import Masonry
 
 class HomeCollectionViewCell: TZCollectionViewCell {
-    var tableViewProxy:HomeTableViewProxy = {
+    lazy var tableViewProxy:HomeTableViewProxy = {
         let tableViewProxy = HomeTableViewProxy(identifier: "HomeTableViewCell", configClosure: { (cell:TZTableViewCell, cellData:AnyObject, indexpath:IndexPath) in
+            cell.contentView.sakura.backgroundColor()("Home.BackgroundColor")
             cell.configWithData(data: cellData)
         }, actionClosure: { (cell:TZTableViewCell, cellData:AnyObject, indexpath:IndexPath) in
         

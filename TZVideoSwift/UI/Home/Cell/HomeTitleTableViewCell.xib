@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeTitleTableViewCell" id="1ES-da-EXZ" customClass="HomeTitleTableViewCell">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeTitleTableViewCell" id="1ES-da-EXZ" customClass="HomeTitleTableViewCell" customModule="TZVideoSwift" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1ES-da-EXZ" id="G1e-RB-oKd">
@@ -40,8 +40,8 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="iconView" destination="E05-U3-MmN" id="i7T-J2-y2i"/>
-                <outlet property="titleLabel" destination="CXS-zG-riY" id="YI4-eH-vw6"/>
+                <outlet property="iconView" destination="E05-U3-MmN" id="xEm-iO-jJg"/>
+                <outlet property="titleLabel" destination="CXS-zG-riY" id="Xmo-GF-R2P"/>
             </connections>
             <point key="canvasLocation" x="80" y="144"/>
         </tableViewCell>

@@ -31,8 +31,8 @@ class TZTableViewProxy: NSObject, UITableViewDataSource, UITableViewDelegate {
         super.init()
     }
     
-    convenience init( identifier: String, configClosure: @escaping TZTVConfigClosures, actionClosure: @escaping TZTVActionClosures){
-        self.init()
+    init( identifier: String, configClosure: @escaping TZTVConfigClosures, actionClosure: @escaping TZTVActionClosures){
+        super.init()
         reuseIdentifier = identifier
         cellConfigClosure = configClosure
         cellActionClosure = actionClosure

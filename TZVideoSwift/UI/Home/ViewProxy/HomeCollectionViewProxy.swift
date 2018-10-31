@@ -19,13 +19,17 @@ class HomeCollectionViewProxy: TZCollectionViewProxy, TZSegmentedControlDelegate
         return segmentedControl
     }()
     
-    convenience init (identifier: String, configClosure: @escaping TZCVConfigClosures, actionClosure: @escaping TZCVActionClosures){
-        self.init()
+     override init (identifier: String, configClosure: @escaping TZCVConfigClosures, actionClosure: @escaping TZCVActionClosures){
+        super.init(identifier: identifier, configClosure: configClosure, actionClosure:actionClosure)
         self.collectionView.register(HomeCollectionViewCell.self, forCellWithReuseIdentifier: identifier)
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         print("scrollView.contentOffset.x \(scrollView.contentOffset.x)")
+        let width = scrollView.frame.size.width
+        let index = scrollView.contentOffset.x / width
+        segmentedControl.didMoveTo(index: index)
+        
     }
 
     

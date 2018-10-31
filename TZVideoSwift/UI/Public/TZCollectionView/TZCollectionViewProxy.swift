@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TZCollectionViewProxy: NSObject, UICollectionViewDataSource, UICollectionViewDelegate {
+class TZCollectionViewProxy: NSObject, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
     typealias TZCVConfigClosures = (TZCollectionViewCell, AnyObject, IndexPath) -> Void
     typealias TZCVActionClosures = (TZCollectionViewCell, AnyObject, IndexPath) -> Void
@@ -19,6 +19,7 @@ class TZCollectionViewProxy: NSObject, UICollectionViewDataSource, UICollectionV
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = UICollectionView.ScrollDirection.horizontal
         let tempcollectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
+        tempcollectionView.isPagingEnabled = true
         tempcollectionView.dataSource = self
         tempcollectionView.delegate = self
         tempcollectionView.showsVerticalScrollIndicator = false
@@ -26,18 +27,23 @@ class TZCollectionViewProxy: NSObject, UICollectionViewDataSource, UICollectionV
         return tempcollectionView
     }()
     
-    override init() {
+     override init() {
         super.init()
     }
     
-    convenience init (identifier: String, configClosure: @escaping TZCVConfigClosures, actionClosure: @escaping TZCVActionClosures){
-        self.init()
+//    init (identifier: String, configClosure: @escaping TZCVConfigClosures, actionClosure: @escaping TZCVActionClosures){
+//
+//    }
+    
+     init (identifier: String, configClosure: @escaping TZCVConfigClosures, actionClosure: @escaping TZCVActionClosures){
+        super.init()
         reuseIdentifier = identifier
         cellConfigClosure = configClosure
         cellActionClosure = actionClosure
     }
     
     //MARL: UICollectionViewDataSource
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return dataArray.count
     }
@@ -54,9 +60,20 @@ class TZCollectionViewProxy: NSObject, UICollectionViewDataSource, UICollectionV
         
     }
     
-    
-    
     //MARK: UICollectionViewDelegateFlowLayout
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.bounds.size.width, height:collectionView.bounds.size.height)
+    }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets.zero
+    }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
 }

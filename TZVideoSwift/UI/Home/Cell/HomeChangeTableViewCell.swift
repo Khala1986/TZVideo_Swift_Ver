@@ -26,7 +26,7 @@ class HomeChangeTableViewCell: TZTableViewCell {
     }
     
     override func configWithData(data: AnyObject) {
-        if data is HomeTemplateData{
+        if data is HomeTemplateItem{
             let item = (data as! HomeTemplateItem).templateData.first
             self.titleLabel.text = item?.title
         }

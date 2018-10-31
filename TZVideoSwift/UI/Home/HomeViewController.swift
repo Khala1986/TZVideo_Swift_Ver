@@ -9,15 +9,15 @@ import UIKit
 import Masonry
 class HomeViewController: TZBaseViewController {
     var dataSource:HomeDataSource!
+    
     lazy var collectionViewProxy:HomeCollectionViewProxy={
         let collectionViewProxy = HomeCollectionViewProxy(identifier: "HomeCollectionViewCell", configClosure: { (cell:TZCollectionViewCell, cellData:AnyObject, indexpath:IndexPath) in
-            if cell is HomeCollectionViewCell && cellData is HomeChannelList {
+//            if cell is HomeCollectionViewCell && cellData is HomeChannelList {
                 cell.contentView.sakura.backgroundColor()("Home.BackgroundColor")
                 self.dataSource.getChannel(getChannel: (cellData as! HomeChannelList).channelId!) { (data: Any) in
                     (cell as! HomeCollectionViewCell).config(response:data as!HomeTemplateResponse)
                 }
-                
-            }
+//            }
             
         }, actionClosure: { (cell:TZCollectionViewCell, cellData:AnyObject, indexpath:IndexPath) in
             
@@ -38,6 +38,7 @@ class HomeViewController: TZBaseViewController {
         self.contentView.addSubview(collectionViewProxy.collectionView)
         collectionViewProxy.collectionView .mas_makeConstraints { (maker:MASConstraintMaker?) in
             maker?.top.equalTo()(collectionViewProxy.segmentedControl.mas_bottom)
+            maker?.leading.trailing()?.bottom()?.equalTo()(self.contentView)
         }
         
         dataSource = HomeDataSource()

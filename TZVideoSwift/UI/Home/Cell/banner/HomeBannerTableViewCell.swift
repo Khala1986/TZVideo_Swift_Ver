@@ -31,6 +31,11 @@ class HomeBannerTableViewCell: TZTableViewCell, TYCyclePagerViewDelegate, TYCycl
         // Configure the view for the selected state
     }
     
+    override func configWithData(data: AnyObject) {
+        self.dataArray = (data as! HomeTemplateItem).templateData
+        self.cycleView .reloadData()
+    }
+
     func numberOfItems(in pageView: TYCyclePagerView) -> Int {
         return self.dataArray.count
     }

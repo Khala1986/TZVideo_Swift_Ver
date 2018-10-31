@@ -156,10 +156,10 @@ class TZSegmentedControl: UIToolbar, UICollectionViewDelegate, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.didMoveTo(index: CGFloat(indexPath.item))
-        self.collectionView.scrollToItem(at: indexPath, at: UICollectionView.ScrollPosition.centeredHorizontally, animated: true)
+//        self.didMoveTo(index: CGFloat(indexPath.item))
+//        self.collectionView.scrollToItem(at: indexPath, at: UICollectionView.ScrollPosition.centeredHorizontally, animated: true)
 //        if (responds(to: #selector(scDelegate?.didSelectItemAtIndex(segmentedControl:selectedIndex:fromIndex:)))) {
-//            scDelegate?.didSelectItemAtIndex!(segmentedControl:self , selectedIndex:indexPath.item, fromIndex: self.currentIndex)
+            scDelegate?.didSelectItemAtIndex!(segmentedControl:self , selectedIndex:indexPath.item, fromIndex: self.currentIndex)
 //        }
     }
     

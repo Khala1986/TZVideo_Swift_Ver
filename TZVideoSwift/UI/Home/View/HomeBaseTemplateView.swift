@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import Masonry
 class HomeBaseTemplateView: UIView {
 
     @IBOutlet weak var imageView: UIImageView!
@@ -15,7 +15,7 @@ class HomeBaseTemplateView: UIView {
     @IBOutlet weak var actionButton: UIButton!
     @IBOutlet fileprivate weak var imageRatioConstraint: NSLayoutConstraint!
     var imageRatio:CGFloat!
-    var templateData:Any!
+    var templateData:HomeTemplateData!
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
@@ -25,8 +25,12 @@ class HomeBaseTemplateView: UIView {
     */
     required init?(coder aDecoder: NSCoder) {
        super.init(coder: aDecoder)
-        let view = Bundle.main.loadNibNamed("HomeBaseTemplateView", owner: self, options: nil)?.last 
-        self.addSubview(view as! UIView)
+        let view = Bundle.main.loadNibNamed("HomeBaseTemplateView", owner: self, options: nil)?.last as! UIView
+        self.addSubview(view)
+        self.backgroundColor = UIColor.clear
+        view.mas_makeConstraints { (maker:MASConstraintMaker?) in
+            maker?.edges.equalTo()(self)
+        }
         self.titleLabel.sakura.textColor()("App.TableViewCellTitleTextColor")
         self.subTitleLabel.sakura.textColor()("App.TableViewCellDescTextColor")
     }
@@ -45,12 +49,12 @@ class HomeBaseTemplateView: UIView {
 
     func setupWithTemplateData(data:Any) {
         if data is HomeTemplateData{
-            self.templateData = data as! HomeTemplateData
-            
+            self.templateData = data as? HomeTemplateData
+            self.setContent(title:templateData.title ,subTitle: templateData.subTitle, imageUrl: templateData.img)
         }
     }
     
-    func setConten(title:String, subTitle:String, imageUrl:String) {
+    func setContent(title:String, subTitle:String, imageUrl:String) {
         self.titleLabel.text = title
         self.subTitleLabel.text = subTitle
         self.imageView.setImageWith(URL(string: imageUrl)!)

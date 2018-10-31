@@ -25,8 +25,8 @@ public let HomeTableViewCellHeights:Dictionary<String,CGFloat> = [
 
 class HomeTableViewProxy: TZTableViewProxy {
     
-    convenience init( identifier: String, configClosure: @escaping TZTVConfigClosures, actionClosure: @escaping TZTVActionClosures){
-        self.init()
+    override init( identifier: String, configClosure: @escaping TZTVConfigClosures, actionClosure: @escaping TZTVActionClosures){
+        super.init(identifier: identifier, configClosure: configClosure, actionClosure: actionClosure)
         self.tableView.delegate = self
         self.tableView.dataSource = self
         for className in HomeTableViewCellIdentifiers.values{
@@ -51,8 +51,8 @@ class HomeTableViewProxy: TZTableViewProxy {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let item = self.dataArray[indexPath.row] as! HomeTemplateItem
-        let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableViewCellIdentifiers[item.templateName]!, for: indexPath)
-        cellConfigClosure(cell as! TZTableViewCell, dataArray?[indexPath.row] as AnyObject,indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableViewCellIdentifiers[item.templateName]!, for: indexPath) as! TZTableViewCell
+        cellConfigClosure(cell, dataArray?[indexPath.row] as AnyObject,indexPath)
         
         return cell;
     }
