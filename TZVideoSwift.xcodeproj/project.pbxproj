@@ -51,6 +51,9 @@
 		FD4FF68B217C1E6E001A20EF /* HomeTemplateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4FF68A217C1E6E001A20EF /* HomeTemplateResponse.swift */; };
 		FD4FF68D217C21CB001A20EF /* HomeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4FF68C217C21CB001A20EF /* HomeDataSource.swift */; };
 		FD5A3F9F21777975006EC2C4 /* TZToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5A3F9E21777975006EC2C4 /* TZToast.swift */; };
+		FD6DDC5D218B2464000A78D9 /* FollowBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6DDC5B218B2464000A78D9 /* FollowBaseCell.swift */; };
+		FD6DDC5E218B2464000A78D9 /* FollowBaseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD6DDC5C218B2464000A78D9 /* FollowBaseCell.xib */; };
+		FD6DDC60218B24DB000A78D9 /* FollowTableViewProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6DDC5F218B24DB000A78D9 /* FollowTableViewProxy.swift */; };
 		FD782815217374CA00DD19B6 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD782814217374CA00DD19B6 /* MainTabBarController.swift */; };
 		FD78282A217381A300DD19B6 /* TZNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD782829217381A300DD19B6 /* TZNavigationController.swift */; };
 		FD78282C2173822800DD19B6 /* TZBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD78282B2173822800DD19B6 /* TZBaseViewController.swift */; };
@@ -149,6 +152,9 @@
 		FD4FF68A217C1E6E001A20EF /* HomeTemplateResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTemplateResponse.swift; sourceTree = "<group>"; };
 		FD4FF68C217C21CB001A20EF /* HomeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataSource.swift; sourceTree = "<group>"; };
 		FD5A3F9E21777975006EC2C4 /* TZToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZToast.swift; sourceTree = "<group>"; };
+		FD6DDC5B218B2464000A78D9 /* FollowBaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowBaseCell.swift; sourceTree = "<group>"; };
+		FD6DDC5C218B2464000A78D9 /* FollowBaseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FollowBaseCell.xib; sourceTree = "<group>"; };
+		FD6DDC5F218B24DB000A78D9 /* FollowTableViewProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowTableViewProxy.swift; sourceTree = "<group>"; };
 		FD782814217374CA00DD19B6 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		FD782829217381A300DD19B6 /* TZNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZNavigationController.swift; sourceTree = "<group>"; };
 		FD78282B2173822800DD19B6 /* TZBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZBaseViewController.swift; sourceTree = "<group>"; };
@@ -362,6 +368,23 @@
 			path = TZCategories;
 			sourceTree = "<group>";
 		};
+		FD6DDC59218B2404000A78D9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FD6DDC5B218B2464000A78D9 /* FollowBaseCell.swift */,
+				FD6DDC5C218B2464000A78D9 /* FollowBaseCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FD6DDC5A218B240D000A78D9 /* ViewProxy */ = {
+			isa = PBXGroup;
+			children = (
+				FD6DDC5F218B24DB000A78D9 /* FollowTableViewProxy.swift */,
+			);
+			path = ViewProxy;
+			sourceTree = "<group>";
+		};
 		FD7828162173775400DD19B6 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -508,6 +531,8 @@
 		FD78282721737AC500DD19B6 /* Follow */ = {
 			isa = PBXGroup;
 			children = (
+				FD6DDC5A218B240D000A78D9 /* ViewProxy */,
+				FD6DDC59218B2404000A78D9 /* Views */,
 				FD7828352173875600DD19B6 /* FollowViewController.swift */,
 			);
 			path = Follow;
@@ -687,6 +712,7 @@
 				FD14993D217DC62F0058C68E /* HomeBannerTableViewCell.xib in Resources */,
 				FDB883C9217C191400058D38 /* Home_TableView_Response_15.json in Resources */,
 				FD160CB6216C910C00FDFBF1 /* Assets.xcassets in Resources */,
+				FD6DDC5E218B2464000A78D9 /* FollowBaseCell.xib in Resources */,
 				FD14BD472174D606001BA5DC /* TZErrorView.xib in Resources */,
 				FDE3C57D2189D4510021D5F6 /* Discovery_List.json in Resources */,
 				FD14994F217DC7420058C68E /* HomeChangeTableViewCell.xib in Resources */,
@@ -827,12 +853,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD14992F217DBE1D0058C68E /* HomeCollectionViewCell.swift in Sources */,
+				FD6DDC5D218B2464000A78D9 /* FollowBaseCell.swift in Sources */,
 				FD5A3F9F21777975006EC2C4 /* TZToast.swift in Sources */,
 				FD7828362173875600DD19B6 /* FollowViewController.swift in Sources */,
 				FD14992D217DBD950058C68E /* HomeCollectionViewProxy.swift in Sources */,
 				FD10889A21783BDE00CE52FC /* TZSegmentedControl.swift in Sources */,
 				FDE3C5872189F45F0021D5F6 /* DiscoveryTableViewProxy.swift in Sources */,
 				FD14BD452174D5D3001BA5DC /* TZErrorView.swift in Sources */,
+				FD6DDC60218B24DB000A78D9 /* FollowTableViewProxy.swift in Sources */,
 				FD4C2CEA21761A57005E8F68 /* TZLoading.swift in Sources */,
 				FD78282E2173829C00DD19B6 /* TZWebViewController.swift in Sources */,
 				FD149938217DC53A0058C68E /* HomeBannerCollectionViewCell.swift in Sources */,

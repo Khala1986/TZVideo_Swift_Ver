@@ -25,7 +25,20 @@ struct FollowListItem: Codable {
     var images:[String]!
     var video:FollowVideoItem!
     var publisher:FollowPublisher!
-
+    
+    func cellClassName() -> String {
+        switch type {
+        case 1:
+            return "FollowBaseCell"
+        case 2:
+            return "FollowImageCell"
+        case 3:
+            return ""
+        default:
+            return "FollowBaseCell"
+        }
+    }
+    
 }
 
 struct FollowListResponse: Codable {
