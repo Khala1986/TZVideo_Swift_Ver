@@ -9,7 +9,7 @@ import Foundation
 
 struct DiscoveryPublisher: Codable {
     var name:String!
-    var avater:String!
+    var avatar:String!
 }
 
 struct DiscoveryListItem: Codable {

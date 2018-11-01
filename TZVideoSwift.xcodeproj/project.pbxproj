@@ -73,6 +73,7 @@
 		FDE3C57F2189D6600021D5F6 /* DiscoveryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE3C57E2189D6600021D5F6 /* DiscoveryDataSource.swift */; };
 		FDE3C5832189DFB30021D5F6 /* DiscoveryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE3C5812189DFB30021D5F6 /* DiscoveryTableViewCell.swift */; };
 		FDE3C5842189DFB30021D5F6 /* DiscoveryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDE3C5822189DFB30021D5F6 /* DiscoveryTableViewCell.xib */; };
+		FDE3C5872189F45F0021D5F6 /* DiscoveryTableViewProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE3C5862189F45F0021D5F6 /* DiscoveryTableViewProxy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,6 +172,7 @@
 		FDE3C57E2189D6600021D5F6 /* DiscoveryDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryDataSource.swift; sourceTree = "<group>"; };
 		FDE3C5812189DFB30021D5F6 /* DiscoveryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryTableViewCell.swift; sourceTree = "<group>"; };
 		FDE3C5822189DFB30021D5F6 /* DiscoveryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoveryTableViewCell.xib; sourceTree = "<group>"; };
+		FDE3C5862189F45F0021D5F6 /* DiscoveryTableViewProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryTableViewProxy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -502,6 +504,7 @@
 		FD78282421737A3B00DD19B6 /* Discovery */ = {
 			isa = PBXGroup;
 			children = (
+				FDE3C5852189F3C90021D5F6 /* ViewProxy */,
 				FDE3C5802189DE850021D5F6 /* Views */,
 				FD7828332173871700DD19B6 /* DiscoveryViewController.swift */,
 			);
@@ -563,6 +566,14 @@
 				FDE3C5822189DFB30021D5F6 /* DiscoveryTableViewCell.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		FDE3C5852189F3C90021D5F6 /* ViewProxy */ = {
+			isa = PBXGroup;
+			children = (
+				FDE3C5862189F45F0021D5F6 /* DiscoveryTableViewProxy.swift */,
+			);
+			path = ViewProxy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -825,6 +836,7 @@
 				FD7828362173875600DD19B6 /* FollowViewController.swift in Sources */,
 				FD14992D217DBD950058C68E /* HomeCollectionViewProxy.swift in Sources */,
 				FD10889A21783BDE00CE52FC /* TZSegmentedControl.swift in Sources */,
+				FDE3C5872189F45F0021D5F6 /* DiscoveryTableViewProxy.swift in Sources */,
 				FD14BD452174D5D3001BA5DC /* TZErrorView.swift in Sources */,
 				FD4C2CEA21761A57005E8F68 /* TZLoading.swift in Sources */,
 				FD78282E2173829C00DD19B6 /* TZWebViewController.swift in Sources */,

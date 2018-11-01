@@ -39,7 +39,7 @@ class DiscoveryTableViewCell: TZTableViewCell {
             self.titleLabel.text = cellData.title
             self.durationLabel.text = cellData.duration
             self.nameLabel.text = cellData.publisher.name
-            self.avatarImageView.setImageWith(URL(string: cellData.publisher.avater)!)
+            self.avatarImageView.setImageWith(URL(string: cellData.publisher.avatar)!)
         }
     }
 }

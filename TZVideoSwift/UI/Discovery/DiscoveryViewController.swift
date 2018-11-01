@@ -6,13 +6,39 @@
 //
 
 import UIKit
+import Masonry
 
 class DiscoveryViewController: TZBaseViewController {
+    var dataSource:DiscoveryDataSource!
+
+    lazy var tableViewProxy:DiscoveryTableViewProxy = {
+        let tableViewProxy = DiscoveryTableViewProxy(identifier: "DiscoveryTableViewCell", configClosure: { (cell:TZTableViewCell, cellData:AnyObject, indexpath:IndexPath) in
+            cell.contentView.sakura.backgroundColor()("Home.BackgroundColor")
+            cell.configWithData(data: cellData)
+        }, actionClosure: { (cell:TZTableViewCell, cellData:AnyObject, indexpath:IndexPath) in
+            
+        })
+        return tableViewProxy
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "发现"
+//        self.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentAutomatic
+        
+        self.contentView.addSubview(tableViewProxy.tableView)
+        tableViewProxy.tableView.mas_makeConstraints { (maker:MASConstraintMaker?) in
+            maker?.edges.equalTo()(self.contentView)
+        }
+        
         // Do any additional setup after loading the view.
+        dataSource = DiscoveryDataSource()
+        dataSource.getDiscoveryList(page: 0) { (response:Any) in
+            print("response \(response)")
+            tableViewProxy.dataArray = (response as! DiscoveryListResponse).data
+            tableViewProxy.tableView.reloadData()
+        }
+        
     }
     
 
