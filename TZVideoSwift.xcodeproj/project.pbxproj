@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05B102000311460A8E0491EF /* Pods_TZVideoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13F4187C2731D0A737E21018 /* Pods_TZVideoSwift.framework */; };
-		87A467B7178ACD55B6C3B8C4 /* Pods_TZVideoSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0973DA9F7BE8461BE26EBAC /* Pods_TZVideoSwiftTests.framework */; };
-		8B4B9F926FA5F7E868EA7F9B /* Pods_TZVideoSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 476DD408FE65C62C5A9BC14E /* Pods_TZVideoSwiftUITests.framework */; };
 		FD1088982178193B00CE52FC /* TZInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1088972178193B00CE52FC /* TZInputView.swift */; };
 		FD10889A21783BDE00CE52FC /* TZSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD10889921783BDE00CE52FC /* TZSegmentedControl.swift */; };
 		FD14992B217DBD560058C68E /* HomeTableViewProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14992A217DBD560058C68E /* HomeTableViewProxy.swift */; };
@@ -46,6 +43,8 @@
 		FD192681217581D1003239DB /* TZCollectionViewProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD192680217581D1003239DB /* TZCollectionViewProxy.swift */; };
 		FD19268321758310003239DB /* TZCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD19268221758310003239DB /* TZCollectionViewCell.swift */; };
 		FD1C80D22176CAB6005C132B /* TZShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1C80D12176CAB6005C132B /* TZShare.swift */; };
+		FD41C294218B12D600EE21C6 /* Follow_List.json in Resources */ = {isa = PBXBuildFile; fileRef = FD41C293218B12D600EE21C6 /* Follow_List.json */; };
+		FD41C296218B1EFE00EE21C6 /* FollowDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD41C295218B1EFE00EE21C6 /* FollowDataSource.swift */; };
 		FD4C2CEA21761A57005E8F68 /* TZLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C2CE921761A57005E8F68 /* TZLoading.swift */; };
 		FD4C2CED21761E26005E8F68 /* UIColor+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C2CEC21761E26005E8F68 /* UIColor+Custom.swift */; };
 		FD4FF687217C1B2E001A20EF /* TZResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4FF686217C1B2E001A20EF /* TZResponse.swift */; };
@@ -94,14 +93,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		13F4187C2731D0A737E21018 /* Pods_TZVideoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TZVideoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		387A860BEF1FBD3DEBEFF3DF /* Pods-TZVideoSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TZVideoSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TZVideoSwiftTests/Pods-TZVideoSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
 		4214190F47E7BD79A05444C9 /* Pods-TZVideoSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TZVideoSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TZVideoSwift/Pods-TZVideoSwift.debug.xcconfig"; sourceTree = "<group>"; };
-		476DD408FE65C62C5A9BC14E /* Pods_TZVideoSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TZVideoSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		692D71AA46D320BFE2CEAE88 /* Pods-TZVideoSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TZVideoSwiftUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TZVideoSwiftUITests/Pods-TZVideoSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
 		88A7B97CAA10C04B6C309EE8 /* Pods-TZVideoSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TZVideoSwiftUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TZVideoSwiftUITests/Pods-TZVideoSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8B54E426AF948CF4070C5B27 /* Pods-TZVideoSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TZVideoSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TZVideoSwiftTests/Pods-TZVideoSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
-		E0973DA9F7BE8461BE26EBAC /* Pods_TZVideoSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TZVideoSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E35014DBE510E26D1A83809B /* Pods-TZVideoSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TZVideoSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-TZVideoSwift/Pods-TZVideoSwift.release.xcconfig"; sourceTree = "<group>"; };
 		FD1088972178193B00CE52FC /* TZInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZInputView.swift; sourceTree = "<group>"; };
 		FD10889921783BDE00CE52FC /* TZSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZSegmentedControl.swift; sourceTree = "<group>"; };
@@ -145,6 +141,8 @@
 		FD192680217581D1003239DB /* TZCollectionViewProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZCollectionViewProxy.swift; sourceTree = "<group>"; };
 		FD19268221758310003239DB /* TZCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZCollectionViewCell.swift; sourceTree = "<group>"; };
 		FD1C80D12176CAB6005C132B /* TZShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZShare.swift; sourceTree = "<group>"; };
+		FD41C293218B12D600EE21C6 /* Follow_List.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Follow_List.json; sourceTree = "<group>"; };
+		FD41C295218B1EFE00EE21C6 /* FollowDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowDataSource.swift; sourceTree = "<group>"; };
 		FD4C2CE921761A57005E8F68 /* TZLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZLoading.swift; sourceTree = "<group>"; };
 		FD4C2CEC21761E26005E8F68 /* UIColor+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Custom.swift"; sourceTree = "<group>"; };
 		FD4FF686217C1B2E001A20EF /* TZResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZResponse.swift; sourceTree = "<group>"; };
@@ -180,7 +178,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05B102000311460A8E0491EF /* Pods_TZVideoSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +185,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87A467B7178ACD55B6C3B8C4 /* Pods_TZVideoSwiftTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +192,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B4B9F926FA5F7E868EA7F9B /* Pods_TZVideoSwiftUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,16 +209,6 @@
 				692D71AA46D320BFE2CEAE88 /* Pods-TZVideoSwiftUITests.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		DB33DACA457F5A059DBCB163 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				13F4187C2731D0A737E21018 /* Pods_TZVideoSwift.framework */,
-				E0973DA9F7BE8461BE26EBAC /* Pods_TZVideoSwiftTests.framework */,
-				476DD408FE65C62C5A9BC14E /* Pods_TZVideoSwiftUITests.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		FD149928217DB6DE0058C68E /* ViewProxy */ = {
@@ -277,6 +262,7 @@
 		FD14BD3A21747407001BA5DC /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				FD41C292218B0FEF00EE21C6 /* Follow */,
 				FDE3C57B2189D42B0021D5F6 /* Discovery */,
 				FDB883CA217C1A4300058D38 /* Public */,
 				FDB883BD217C18ED00058D38 /* Home */,
@@ -302,7 +288,6 @@
 				FD160CCD216C910C00FDFBF1 /* TZVideoSwiftUITests */,
 				FD160CA9216C910B00FDFBF1 /* Products */,
 				20903F160B63510929EDCFD3 /* Pods */,
-				DB33DACA457F5A059DBCB163 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -358,6 +343,15 @@
 			children = (
 			);
 			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		FD41C292218B0FEF00EE21C6 /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+				FD41C293218B12D600EE21C6 /* Follow_List.json */,
+				FD41C295218B1EFE00EE21C6 /* FollowDataSource.swift */,
+			);
+			path = Follow;
 			sourceTree = "<group>";
 		};
 		FD4C2CEB21761DDE005E8F68 /* TZCategories */ = {
@@ -687,6 +681,7 @@
 				FD160CB9216C910C00FDFBF1 /* LaunchScreen.storyboard in Resources */,
 				FDB883C5217C191400058D38 /* Home_TableView_Response_11.json in Resources */,
 				FD14BD3E217474D1001BA5DC /* default.json in Resources */,
+				FD41C294218B12D600EE21C6 /* Follow_List.json in Resources */,
 				FDB883C7217C191400058D38 /* Home_TableView_Response_13.json in Resources */,
 				FDB883C8217C191400058D38 /* Home_Channel_List.json in Resources */,
 				FD14993D217DC62F0058C68E /* HomeBannerTableViewCell.xib in Resources */,
@@ -863,6 +858,7 @@
 				FD4FF687217C1B2E001A20EF /* TZResponse.swift in Sources */,
 				FD1088982178193B00CE52FC /* TZInputView.swift in Sources */,
 				FD782830217383B400DD19B6 /* TZMediator.swift in Sources */,
+				FD41C296218B1EFE00EE21C6 /* FollowDataSource.swift in Sources */,
 				FD14993C217DC62F0058C68E /* HomeBannerTableViewCell.swift in Sources */,
 				FD149940217DC6810058C68E /* HomeTitleTableViewCell.swift in Sources */,
 				FD4C2CED21761E26005E8F68 /* UIColor+Custom.swift in Sources */,
