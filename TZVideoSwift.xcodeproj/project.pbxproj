@@ -51,6 +51,10 @@
 		FD4FF68B217C1E6E001A20EF /* HomeTemplateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4FF68A217C1E6E001A20EF /* HomeTemplateResponse.swift */; };
 		FD4FF68D217C21CB001A20EF /* HomeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4FF68C217C21CB001A20EF /* HomeDataSource.swift */; };
 		FD5A3F9F21777975006EC2C4 /* TZToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5A3F9E21777975006EC2C4 /* TZToast.swift */; };
+		FD660BE2218C34B1003C43C3 /* FollowImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD660BE0218C34B1003C43C3 /* FollowImageCell.swift */; };
+		FD660BE3218C34B1003C43C3 /* FollowImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD660BE1218C34B1003C43C3 /* FollowImageCell.xib */; };
+		FD660BE6218C34ED003C43C3 /* FollowVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD660BE4218C34ED003C43C3 /* FollowVideoCell.swift */; };
+		FD660BE7218C34ED003C43C3 /* FollowVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD660BE5218C34ED003C43C3 /* FollowVideoCell.xib */; };
 		FD6DDC5D218B2464000A78D9 /* FollowBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6DDC5B218B2464000A78D9 /* FollowBaseCell.swift */; };
 		FD6DDC5E218B2464000A78D9 /* FollowBaseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD6DDC5C218B2464000A78D9 /* FollowBaseCell.xib */; };
 		FD6DDC60218B24DB000A78D9 /* FollowTableViewProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6DDC5F218B24DB000A78D9 /* FollowTableViewProxy.swift */; };
@@ -152,6 +156,10 @@
 		FD4FF68A217C1E6E001A20EF /* HomeTemplateResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTemplateResponse.swift; sourceTree = "<group>"; };
 		FD4FF68C217C21CB001A20EF /* HomeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataSource.swift; sourceTree = "<group>"; };
 		FD5A3F9E21777975006EC2C4 /* TZToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZToast.swift; sourceTree = "<group>"; };
+		FD660BE0218C34B1003C43C3 /* FollowImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowImageCell.swift; sourceTree = "<group>"; };
+		FD660BE1218C34B1003C43C3 /* FollowImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FollowImageCell.xib; sourceTree = "<group>"; };
+		FD660BE4218C34ED003C43C3 /* FollowVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowVideoCell.swift; sourceTree = "<group>"; };
+		FD660BE5218C34ED003C43C3 /* FollowVideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FollowVideoCell.xib; sourceTree = "<group>"; };
 		FD6DDC5B218B2464000A78D9 /* FollowBaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowBaseCell.swift; sourceTree = "<group>"; };
 		FD6DDC5C218B2464000A78D9 /* FollowBaseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FollowBaseCell.xib; sourceTree = "<group>"; };
 		FD6DDC5F218B24DB000A78D9 /* FollowTableViewProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowTableViewProxy.swift; sourceTree = "<group>"; };
@@ -373,6 +381,10 @@
 			children = (
 				FD6DDC5B218B2464000A78D9 /* FollowBaseCell.swift */,
 				FD6DDC5C218B2464000A78D9 /* FollowBaseCell.xib */,
+				FD660BE0218C34B1003C43C3 /* FollowImageCell.swift */,
+				FD660BE1218C34B1003C43C3 /* FollowImageCell.xib */,
+				FD660BE4218C34ED003C43C3 /* FollowVideoCell.swift */,
+				FD660BE5218C34ED003C43C3 /* FollowVideoCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -705,6 +717,8 @@
 			files = (
 				FD160CB9216C910C00FDFBF1 /* LaunchScreen.storyboard in Resources */,
 				FDB883C5217C191400058D38 /* Home_TableView_Response_11.json in Resources */,
+				FD660BE7218C34ED003C43C3 /* FollowVideoCell.xib in Resources */,
+				FD660BE3218C34B1003C43C3 /* FollowImageCell.xib in Resources */,
 				FD14BD3E217474D1001BA5DC /* default.json in Resources */,
 				FD41C294218B12D600EE21C6 /* Follow_List.json in Resources */,
 				FDB883C7217C191400058D38 /* Home_TableView_Response_13.json in Resources */,
@@ -878,6 +892,7 @@
 				FD78282C2173822800DD19B6 /* TZBaseViewController.swift in Sources */,
 				FD782832217386BE00DD19B6 /* HomeViewController.swift in Sources */,
 				FD782815217374CA00DD19B6 /* MainTabBarController.swift in Sources */,
+				FD660BE2218C34B1003C43C3 /* FollowImageCell.swift in Sources */,
 				FD782838217387AB00DD19B6 /* UserCenterViewController.swift in Sources */,
 				FD149948217DC6D50058C68E /* HomeTwoTableViewCell.swift in Sources */,
 				FDE3C5832189DFB30021D5F6 /* DiscoveryTableViewCell.swift in Sources */,
@@ -886,6 +901,7 @@
 				FD4FF687217C1B2E001A20EF /* TZResponse.swift in Sources */,
 				FD1088982178193B00CE52FC /* TZInputView.swift in Sources */,
 				FD782830217383B400DD19B6 /* TZMediator.swift in Sources */,
+				FD660BE6218C34ED003C43C3 /* FollowVideoCell.swift in Sources */,
 				FD41C296218B1EFE00EE21C6 /* FollowDataSource.swift in Sources */,
 				FD14993C217DC62F0058C68E /* HomeBannerTableViewCell.swift in Sources */,
 				FD149940217DC6810058C68E /* HomeTitleTableViewCell.swift in Sources */,
