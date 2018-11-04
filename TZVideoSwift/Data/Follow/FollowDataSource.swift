@@ -33,7 +33,7 @@ struct FollowListItem: Codable {
         case 2:
             return "FollowImageCell"
         case 3:
-            return ""
+            return "FollowVideoCell"
         default:
             return "FollowBaseCell"
         }

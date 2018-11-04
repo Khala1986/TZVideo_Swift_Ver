@@ -48,7 +48,7 @@ class FollowImageCell: FollowBaseCell, UICollectionViewDelegate, UICollectionVie
         case 1:
             return (screenWidth - 20) / 3 * 2
     
-        case 4:
+        case 2, 4:
             return (screenWidth - 20) / 2
 
         default:
@@ -62,13 +62,13 @@ class FollowImageCell: FollowBaseCell, UICollectionViewDelegate, UICollectionVie
         let screenWidth = UIScreen.main.bounds.width
         
         switch count {
-        case 6:
+        case 1, 5, 6:
             return (screenWidth - 20) / 3 * 2
         case 2:
             return (screenWidth - 20) / 2
         case 3:
             return (screenWidth - 20) / 3
-        case 9:
+        case 4, 7, 8, 9:
             return screenWidth - 20
         default:
             return screenWidth - 20
@@ -100,7 +100,7 @@ class FollowImageCell: FollowBaseCell, UICollectionViewDelegate, UICollectionVie
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let size = imageViewHeight(count: dataArray.count)
+        let size = imageSize(count: dataArray.count)
         return CGSize(width: size, height: size)
     }
     

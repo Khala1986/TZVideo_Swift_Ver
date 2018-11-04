@@ -32,6 +32,12 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2im-fB-JDs">
+                        <rect key="frame" x="70" y="35" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ze-Z2-dSP">
                         <rect key="frame" x="10" y="75" width="549" height="100.5"/>
                         <string key="text">就精神抖擞父亲陪我二位五十多粉丝都非常呈现出预期清清浅浅去啊但是跟佛哦哦啊批判一番感受属于亚洲增长撒白健健康康广告某某某山山水水就精神抖擞父亲陪我二位五十多粉丝都非常呈现出预期清清浅浅去啊但是跟佛哦哦啊批判一番感受属于亚洲增长撒白健健康康广告某某某山山水水就精神抖擞父亲陪我二位五十多粉丝都非常呈现出预期清清浅浅去啊但是跟佛哦哦啊批判一番感受属于亚洲增长撒白健健康康广告某某某山山水水</string>
@@ -55,9 +61,9 @@
                                     <constraint firstAttribute="height" constant="231" id="vmN-EY-Wk4"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9b-GL-Uak">
-                                <rect key="frame" x="251.5" y="100.5" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9b-GL-Uak">
+                                <rect key="frame" x="252" y="93" width="45" height="45"/>
+                                <state key="normal" image="mc_playbutton"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -109,12 +115,6 @@
                             <constraint firstAttribute="height" constant="50" id="zjK-em-KeJ"/>
                         </constraints>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2im-fB-JDs">
-                        <rect key="frame" x="70" y="35" width="42" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                 </subviews>
                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
@@ -149,12 +149,14 @@
                 <outlet property="coverImageView" destination="X34-Bu-LGv" id="XUx-rI-nQU"/>
                 <outlet property="nameLabel" destination="6KO-oh-ezt" id="9Qd-jq-aj6"/>
                 <outlet property="praiseButton" destination="tHL-73-eVj" id="Z3n-xA-ptu"/>
-                <outlet property="titleLabel" destination="2im-fB-JDs" id="rNh-LI-Zs9"/>
+                <outlet property="timeLabel" destination="2im-fB-JDs" id="W5i-eA-zQh"/>
+                <outlet property="titleLabel" destination="7Ze-Z2-dSP" id="HUb-WL-Bec"/>
             </connections>
             <point key="canvasLocation" x="140" y="154.27286356821591"/>
         </tableViewCell>
     </objects>
     <resources>
+        <image name="mc_playbutton" width="45" height="45"/>
         <image name="pprn_comment" width="30" height="30"/>
         <image name="pprn_favorite_heart" width="30" height="30"/>
         <image name="pprn_share" width="30" height="30"/>

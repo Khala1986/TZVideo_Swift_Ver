@@ -24,8 +24,7 @@ class DiscoveryViewController: TZBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "发现"
-//        self.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentAutomatic
-        
+ 
         self.contentView.addSubview(tableViewProxy.tableView)
         tableViewProxy.tableView.mas_makeConstraints { (maker:MASConstraintMaker?) in
             maker?.edges.equalTo()(self.contentView)

@@ -25,8 +25,8 @@ class DiscoveryTableViewProxy: TZTableViewProxy {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let item = self.dataArray[indexPath.row] as! FollowListItem
-        let cell = tableView.dequeueReusableCell(withIdentifier: item.cellClassName(), for: indexPath) as! TZTableViewCell
+        //        let item = self.dataArray[indexPath.row] as! DiscoveryListItem
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DiscoveryTableViewCell", for: indexPath) as! TZTableViewCell
         cellConfigClosure(cell, dataArray?[indexPath.row] as AnyObject,indexPath)
         
         return cell;
