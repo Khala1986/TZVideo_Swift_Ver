@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="UCHorizontalScrollCell" customModule="TZVideoSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="381" height="127"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="381" height="126.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZdK-f8-AlS">
+                        <rect key="frame" x="10" y="17.5" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="BT5-Wp-a07"/>
+                            <constraint firstAttribute="height" constant="22" id="lwi-Ny-Zzj"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="播放记录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HiF-Zr-aDr">
+                        <rect key="frame" x="37" y="20" width="57.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="PdB-db-9IC">
+                        <rect key="frame" x="0.0" y="47" width="381" height="79.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Yjl-rE-Xtt">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="PdB-db-9IC" secondAttribute="trailing" id="3se-56-UJw"/>
+                    <constraint firstItem="HiF-Zr-aDr" firstAttribute="leading" secondItem="ZdK-f8-AlS" secondAttribute="trailing" constant="5" id="5yt-pB-rEs"/>
+                    <constraint firstItem="ZdK-f8-AlS" firstAttribute="centerY" secondItem="HiF-Zr-aDr" secondAttribute="centerY" id="83U-TW-aaE"/>
+                    <constraint firstItem="HiF-Zr-aDr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="8Fn-vD-dOo"/>
+                    <constraint firstItem="ZdK-f8-AlS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Eon-nv-OTU"/>
+                    <constraint firstItem="PdB-db-9IC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Xz1-8h-EHg"/>
+                    <constraint firstItem="PdB-db-9IC" firstAttribute="top" secondItem="HiF-Zr-aDr" secondAttribute="bottom" constant="10" id="adw-zT-PTW"/>
+                    <constraint firstAttribute="bottom" secondItem="PdB-db-9IC" secondAttribute="bottom" id="b11-qo-lDZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collectionView" destination="PdB-db-9IC" id="yqd-Y5-gkU"/>
+                <outlet property="icon" destination="ZdK-f8-AlS" id="U4g-o7-GHt"/>
+                <outlet property="titleLabel" destination="HiF-Zr-aDr" id="90A-Jy-fSp"/>
+            </connections>
+            <point key="canvasLocation" x="56.799999999999997" y="64.31784107946028"/>
+        </tableViewCell>
+    </objects>
+</document>

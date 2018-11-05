@@ -7,16 +7,34 @@
 
 import UIKit
 import SakuraKit
+import Masonry
 
 class UserCenterViewController: TZBaseViewController {
 
+    lazy var tableViewProxy:UserCenterTableViewProxy = {
+        let tableViewProxy = UserCenterTableViewProxy(identifier: "FollowTableViewCell", configClosure: { (cell:TZTableViewCell, cellData:AnyObject, indexpath:IndexPath) in
+            cell.contentView.sakura.backgroundColor()("Home.BackgroundColor")
+            cell.configWithData(data: cellData)
+        }, actionClosure: { (cell:TZTableViewCell, cellData:AnyObject, indexpath:IndexPath) in
+            
+        })
+        return tableViewProxy
+    }()
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "个人中心"
         // Do any additional setup after loading the view.
+        self.contentView.addSubview(tableViewProxy.tableView)
+        tableViewProxy.tableView.mas_makeConstraints { (maker:MASConstraintMaker?) in
+            maker?.edges.equalTo()(self.contentView)
+        }
+
+    
     }
     
-
+    
     /*
     // MARK: - Navigation
 

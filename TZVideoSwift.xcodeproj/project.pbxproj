@@ -80,6 +80,13 @@
 		FDE3C5832189DFB30021D5F6 /* DiscoveryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE3C5812189DFB30021D5F6 /* DiscoveryTableViewCell.swift */; };
 		FDE3C5842189DFB30021D5F6 /* DiscoveryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDE3C5822189DFB30021D5F6 /* DiscoveryTableViewCell.xib */; };
 		FDE3C5872189F45F0021D5F6 /* DiscoveryTableViewProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE3C5862189F45F0021D5F6 /* DiscoveryTableViewProxy.swift */; };
+		FDFC2549218EA3DC00A69A1A /* UCUserInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFC2547218EA3DC00A69A1A /* UCUserInfoCell.swift */; };
+		FDFC254A218EA3DC00A69A1A /* UCUserInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDFC2548218EA3DC00A69A1A /* UCUserInfoCell.xib */; };
+		FDFC254D218EA6AD00A69A1A /* UCHorizontalScrollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFC254B218EA6AD00A69A1A /* UCHorizontalScrollCell.swift */; };
+		FDFC254E218EA6AD00A69A1A /* UCHorizontalScrollCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDFC254C218EA6AD00A69A1A /* UCHorizontalScrollCell.xib */; };
+		FDFC2551218EA74D00A69A1A /* UCCollectionSettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFC254F218EA74D00A69A1A /* UCCollectionSettingsCell.swift */; };
+		FDFC2552218EA74D00A69A1A /* UCCollectionSettingsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDFC2550218EA74D00A69A1A /* UCCollectionSettingsCell.xib */; };
+		FDFC2554218EA80B00A69A1A /* UserCenterTableViewProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFC2553218EA80B00A69A1A /* UserCenterTableViewProxy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -185,6 +192,13 @@
 		FDE3C5812189DFB30021D5F6 /* DiscoveryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryTableViewCell.swift; sourceTree = "<group>"; };
 		FDE3C5822189DFB30021D5F6 /* DiscoveryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoveryTableViewCell.xib; sourceTree = "<group>"; };
 		FDE3C5862189F45F0021D5F6 /* DiscoveryTableViewProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryTableViewProxy.swift; sourceTree = "<group>"; };
+		FDFC2547218EA3DC00A69A1A /* UCUserInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCUserInfoCell.swift; sourceTree = "<group>"; };
+		FDFC2548218EA3DC00A69A1A /* UCUserInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UCUserInfoCell.xib; sourceTree = "<group>"; };
+		FDFC254B218EA6AD00A69A1A /* UCHorizontalScrollCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCHorizontalScrollCell.swift; sourceTree = "<group>"; };
+		FDFC254C218EA6AD00A69A1A /* UCHorizontalScrollCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UCHorizontalScrollCell.xib; sourceTree = "<group>"; };
+		FDFC254F218EA74D00A69A1A /* UCCollectionSettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCCollectionSettingsCell.swift; sourceTree = "<group>"; };
+		FDFC2550218EA74D00A69A1A /* UCCollectionSettingsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UCCollectionSettingsCell.xib; sourceTree = "<group>"; };
+		FDFC2553218EA80B00A69A1A /* UserCenterTableViewProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCenterTableViewProxy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -553,6 +567,8 @@
 		FD78282821737B0800DD19B6 /* UserCenter */ = {
 			isa = PBXGroup;
 			children = (
+				FDFC2546218EA2CB00A69A1A /* ViewProxy */,
+				FDFC2545218EA2BD00A69A1A /* View */,
 				FD782837217387AB00DD19B6 /* UserCenterViewController.swift */,
 			);
 			path = UserCenter;
@@ -603,6 +619,27 @@
 			isa = PBXGroup;
 			children = (
 				FDE3C5862189F45F0021D5F6 /* DiscoveryTableViewProxy.swift */,
+			);
+			path = ViewProxy;
+			sourceTree = "<group>";
+		};
+		FDFC2545218EA2BD00A69A1A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FDFC2547218EA3DC00A69A1A /* UCUserInfoCell.swift */,
+				FDFC2548218EA3DC00A69A1A /* UCUserInfoCell.xib */,
+				FDFC254B218EA6AD00A69A1A /* UCHorizontalScrollCell.swift */,
+				FDFC254C218EA6AD00A69A1A /* UCHorizontalScrollCell.xib */,
+				FDFC254F218EA74D00A69A1A /* UCCollectionSettingsCell.swift */,
+				FDFC2550218EA74D00A69A1A /* UCCollectionSettingsCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FDFC2546218EA2CB00A69A1A /* ViewProxy */ = {
+			isa = PBXGroup;
+			children = (
+				FDFC2553218EA80B00A69A1A /* UserCenterTableViewProxy.swift */,
 			);
 			path = ViewProxy;
 			sourceTree = "<group>";
@@ -716,6 +753,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD160CB9216C910C00FDFBF1 /* LaunchScreen.storyboard in Resources */,
+				FDFC2552218EA74D00A69A1A /* UCCollectionSettingsCell.xib in Resources */,
 				FDB883C5217C191400058D38 /* Home_TableView_Response_11.json in Resources */,
 				FD660BE7218C34ED003C43C3 /* FollowVideoCell.xib in Resources */,
 				FD660BE3218C34B1003C43C3 /* FollowImageCell.xib in Resources */,
@@ -723,10 +761,12 @@
 				FD41C294218B12D600EE21C6 /* Follow_List.json in Resources */,
 				FDB883C7217C191400058D38 /* Home_TableView_Response_13.json in Resources */,
 				FDB883C8217C191400058D38 /* Home_Channel_List.json in Resources */,
+				FDFC254E218EA6AD00A69A1A /* UCHorizontalScrollCell.xib in Resources */,
 				FD14993D217DC62F0058C68E /* HomeBannerTableViewCell.xib in Resources */,
 				FDB883C9217C191400058D38 /* Home_TableView_Response_15.json in Resources */,
 				FD160CB6216C910C00FDFBF1 /* Assets.xcassets in Resources */,
 				FD6DDC5E218B2464000A78D9 /* FollowBaseCell.xib in Resources */,
+				FDFC254A218EA3DC00A69A1A /* UCUserInfoCell.xib in Resources */,
 				FD14BD472174D606001BA5DC /* TZErrorView.xib in Resources */,
 				FDE3C57D2189D4510021D5F6 /* Discovery_List.json in Resources */,
 				FD14994F217DC7420058C68E /* HomeChangeTableViewCell.xib in Resources */,
@@ -876,11 +916,14 @@
 				FD14BD452174D5D3001BA5DC /* TZErrorView.swift in Sources */,
 				FD6DDC60218B24DB000A78D9 /* FollowTableViewProxy.swift in Sources */,
 				FD4C2CEA21761A57005E8F68 /* TZLoading.swift in Sources */,
+				FDFC2549218EA3DC00A69A1A /* UCUserInfoCell.swift in Sources */,
 				FD78282E2173829C00DD19B6 /* TZWebViewController.swift in Sources */,
 				FD149938217DC53A0058C68E /* HomeBannerCollectionViewCell.swift in Sources */,
 				FD160CAE216C910B00FDFBF1 /* ViewController.swift in Sources */,
 				FD14994E217DC7420058C68E /* HomeChangeTableViewCell.swift in Sources */,
 				FD1C80D22176CAB6005C132B /* TZShare.swift in Sources */,
+				FDFC254D218EA6AD00A69A1A /* UCHorizontalScrollCell.swift in Sources */,
+				FDFC2554218EA80B00A69A1A /* UserCenterTableViewProxy.swift in Sources */,
 				FD160CAC216C910B00FDFBF1 /* AppDelegate.swift in Sources */,
 				FD149944217DC6AF0058C68E /* HomeOneBigTableViewCell.swift in Sources */,
 				FD19268321758310003239DB /* TZCollectionViewCell.swift in Sources */,
@@ -894,6 +937,7 @@
 				FD782815217374CA00DD19B6 /* MainTabBarController.swift in Sources */,
 				FD660BE2218C34B1003C43C3 /* FollowImageCell.swift in Sources */,
 				FD782838217387AB00DD19B6 /* UserCenterViewController.swift in Sources */,
+				FDFC2551218EA74D00A69A1A /* UCCollectionSettingsCell.swift in Sources */,
 				FD149948217DC6D50058C68E /* HomeTwoTableViewCell.swift in Sources */,
 				FDE3C5832189DFB30021D5F6 /* DiscoveryTableViewCell.swift in Sources */,
 				FD14BD412174C47A001BA5DC /* TZTableViewProxy.swift in Sources */,
